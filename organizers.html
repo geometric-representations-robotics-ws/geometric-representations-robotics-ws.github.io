@@ -29,8 +29,11 @@
 
         .organizer-row {
             margin-bottom: 0.2rem;
-            padding: 0.5rem;
+            padding: 0.6rem;
             border-radius: 4px;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
         }
 
         .organizer-row:nth-child(even) {
@@ -41,8 +44,17 @@
             background: linear-gradient(135deg, rgba(42, 100, 150, 0.16) 0%, rgba(42, 100, 150, 0.08) 50%, transparent 100%);
         }
 
-        .organizer-row .info {
-            margin-bottom: 0;
+        .org-photo {
+            flex-shrink: 0;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        }
+
+        .org-info {
+            flex: 1;
         }
     </style>
 </head>
@@ -90,153 +102,149 @@
 
             <h1>Organizers</h1>
             <hr class="section-divider">
-
             <p>The workshop is organized by a multidisciplinary international team with strong expertise in geometric
                 methods, robot learning, manipulation, and control.</p>
 
             <div class="organizer-row">
-                <img src="/images/org_luis.png" alt="Luis Figueredo" class="organizer-photo"
-                    onerror="this.src='https://via.placeholder.com/150x150/2a6496/ffffff?text=LF'">
-                <div>
+                <img src="/images/org_figueredo.jpg" alt="Luis Figueredo" class="org-photo"
+                    onerror="this.src='https://via.placeholder.com/100x100/2a6496/ffffff?text=LF'">
+                <div class="org-info">
                     <strong>Dr. Luis F.C. Figueredo</strong> &nbsp;<span
                         style="font-size:0.75rem;color:#2a6496;font-weight:bold;">[Lead Organizer]</span><br>
-                    <div class="info" style="font-size:0.78rem;">
-                        Assistant Professor, School of Computer Science, University of Nottingham, UK<br>
-                        Associated Fellow, Munich Institute of Robotics and Machine Intelligence (MIRMI), TUM<br>
-                        Email: <a href="mailto:figueredo@ieee.org">figueredo@ieee.org</a><br>
-                        Website: <a href="https://www.luisfigueredo.com/">www.luisfigueredo.com</a>
-                    </div>
+                    <span style="font-size:0.8rem;">Assistant Professor, School of Computer Science, University of
+                        Nottingham, UK</span><br>
+                    <span style="font-size:0.8rem;">Associated Fellow, MIRMI, TU Munich</span><br>
+                    <span style="font-size:0.78rem;color:#555;">
+                        Email: <a href="mailto:figueredo@ieee.org">figueredo@ieee.org</a> &nbsp;|&nbsp;
+                        <a href="https://www.luisfigueredo.com/">Personal website</a>
+                    </span>
                 </div>
             </div>
 
             <div class="organizer-row">
-                <img src="/images/org_yuhe.jpg" alt="Yuhe Gong" class="organizer-photo"
-                    onerror="this.src='https://via.placeholder.com/150x150/6a9fb5/ffffff?text=YG'">
-                <div>
+                <img src="/images/org_gong.png" alt="Yuhe Gong" class="org-photo"
+                    onerror="this.src='https://via.placeholder.com/100x100/6a9fb5/ffffff?text=YG'">
+                <div class="org-info">
                     <strong>Yuhe Gong</strong> &nbsp;<span
                         style="font-size:0.75rem;color:#2a6496;font-weight:bold;">[Student Organizer]</span><br>
-                    <div class="info" style="font-size:0.78rem;">
-                        PhD Candidate, University of Nottingham, UK<br>
-                        Address: Jubilee Campus, Wollaton Road, Nottingham, NG8 1BB, UK<br>
-                        Email: <a href="mailto:yuhe.gong@nottingham.ac.uk">yuhe.gong@nottingham.ac.uk</a><br>
-                        Website: <a href="https://yuhegong.github.io/">yuhegong.github.io</a>
-                    </div>
+                    <span style="font-size:0.8rem;">PhD Candidate, University of Nottingham, UK</span><br>
+                    <span style="font-size:0.78rem;color:#555;">
+                        Email: <a href="mailto:yuhe.gong@nottingham.ac.uk">yuhe.gong@nottingham.ac.uk</a> &nbsp;|&nbsp;
+                        <a href="https://yuhegong.github.io/">Personal website</a>
+                    </span>
                 </div>
             </div>
 
             <div class="organizer-row">
-                <img src="/images/org_tobias.jpg" alt="Tobias Löw" class="organizer-photo"
-                    onerror="this.src='https://via.placeholder.com/150x150/6a9fb5/ffffff?text=TL'">
-                <div>
+                <img src="/images/org_loew.png" alt="Tobias Löw" class="org-photo"
+                    onerror="this.src='https://via.placeholder.com/100x100/6a9fb5/ffffff?text=TL'">
+                <div class="org-info">
                     <strong>Tobias Löw</strong><br>
-                    <div class="info" style="font-size:0.78rem;">
-                        Postdoctoral Researcher, Idiap Research Institute, Switzerland<br>
-                        Address: Centre du Parc, Rue Marconi 19, CH-1920 Martigny, Switzerland<br>
-                        Website: <a href="https://www.tobiloew.ch/">www.tobiloew.ch</a>
-                    </div>
+                    <span style="font-size:0.8rem;">Postdoctoral Researcher, Idiap Research Institute,
+                        Switzerland</span><br>
+                    <span style="font-size:0.78rem;color:#555;">
+                        <a href="https://www.tobiloew.ch/">Personal website</a>
+                    </span>
                 </div>
             </div>
 
             <div class="organizer-row">
-                <img src="/images/org_riddhiman.jpg" alt="Riddhiman Laha" class="organizer-photo"
-                    onerror="this.src='https://via.placeholder.com/150x150/6a9fb5/ffffff?text=RL'">
-                <div>
+                <img src="/images/org_laha.jpg" alt="Riddhiman Laha" class="org-photo"
+                    onerror="this.src='https://via.placeholder.com/100x100/6a9fb5/ffffff?text=RL'">
+                <div class="org-info">
                     <strong>Riddhiman Laha</strong><br>
-                    <div class="info" style="font-size:0.78rem;">
-                        Postdoctoral Researcher, Northeastern University, USA<br>
-                        Address: Northeastern University EXP, 815 Columbus Ave, Boston, MA 02120<br>
-                        Email: <a href="mailto:r.laha@northeastern.edu">r.laha@northeastern.edu</a><br>
-                        Website: <a
-                            href="https://sites.google.com/view/riddhimanlaha">sites.google.com/view/riddhimanlaha</a>
-                    </div>
+                    <span style="font-size:0.8rem;">Postdoctoral Researcher, Northeastern University, USA</span><br>
+                    <span style="font-size:0.78rem;color:#555;">
+                        Email: <a href="mailto:r.laha@northeastern.edu">r.laha@northeastern.edu</a> &nbsp;|&nbsp;
+                        <a href="https://sites.google.com/view/riddhimanlaha">Personal website</a>
+                    </span>
                 </div>
             </div>
 
             <div class="organizer-row">
-                <img src="/images/org_hugo.jpg" alt="Hugo Tadashi Kussaba" class="organizer-photo"
-                    onerror="this.src='https://via.placeholder.com/150x150/6a9fb5/ffffff?text=HK'">
-                <div>
+                <img src="/images/org_kussaba.jpg" alt="Hugo Tadashi Kussaba" class="org-photo"
+                    onerror="this.src='https://via.placeholder.com/100x100/6a9fb5/ffffff?text=HK'">
+                <div class="org-info">
                     <strong>Hugo Tadashi Kussaba</strong><br>
-                    <div class="info" style="font-size:0.78rem;">
-                        Professor of Automation and Control, University of Brasilia, Brazil<br>
-                        Email: <a href="mailto:hugo.tadashi@ene.unb.br">hugo.tadashi@ene.unb.br</a><br>
-                        Website: <a href="https://htadashi.github.io/">htadashi.github.io</a>
-                    </div>
+                    <span style="font-size:0.8rem;">Professor of Automation and Control, University of Brasilia,
+                        Brazil</span><br>
+                    <span style="font-size:0.78rem;color:#555;">
+                        Email: <a href="mailto:hugo.tadashi@ene.unb.br">hugo.tadashi@ene.unb.br</a> &nbsp;|&nbsp;
+                        <a href="https://htadashi.github.io/">Personal website</a>
+                    </span>
                 </div>
             </div>
 
             <div class="organizer-row">
-                <img src="/images/org_biyun.jpg" alt="Biyun Xie" class="organizer-photo"
-                    onerror="this.src='https://via.placeholder.com/150x150/6a9fb5/ffffff?text=BX'">
-                <div>
+                <img src="/images/org_biyun.jpg" alt="Biyun Xie" class="org-photo"
+                    onerror="this.src='https://via.placeholder.com/100x100/6a9fb5/ffffff?text=BX'">
+                <div class="org-info">
                     <strong>Prof. Biyun Xie</strong><br>
-                    <div class="info" style="font-size:0.78rem;">
-                        Assistant Professor, Department of Electrical and Computer Engineering, University of Kentucky,
-                        USA<br>
-                        Address: 113E Grehan, Lexington, KY 40506, USA<br>
-                        Email: <a href="mailto:Biyun.Xie@uky.edu">Biyun.Xie@uky.edu</a><br>
-                        Website: <a href="https://engr.uky.edu/people/biyun-xie">UK Profile</a>
-                    </div>
+                    <span style="font-size:0.8rem;">Assistant Professor, Department of Electrical and Computer
+                        Engineering, University of Kentucky, USA</span><br>
+                    <span style="font-size:0.78rem;color:#555;">
+                        Email: <a href="mailto:Biyun.Xie@uky.edu">Biyun.Xie@uky.edu</a> &nbsp;|&nbsp;
+                        <a href="https://engr.uky.edu/people/biyun-xie">Personal website</a>
+                    </span>
                 </div>
             </div>
 
             <div class="organizer-row">
-                <img src="/images/org_bruno.jpg" alt="Bruno Adorno" class="organizer-photo"
-                    onerror="this.src='https://via.placeholder.com/150x150/6a9fb5/ffffff?text=BA'">
-                <div>
+                <img src="/images/org_adorno.jpg" alt="Bruno Adorno" class="org-photo"
+                    onerror="this.src='https://via.placeholder.com/100x100/6a9fb5/ffffff?text=BA'">
+                <div class="org-info">
                     <strong>Prof. Bruno Vilhena Adorno</strong><br>
-                    <div class="info" style="font-size:0.78rem;">
-                        Senior Lecturer in Robotics, University of Manchester, UK<br>
-                        Address: 3rd floor, Core 1E, Engineering Building A, Oxford Road, M13 9PL, Manchester, UK<br>
-                        Email: <a href="mailto:bruno.adorno@manchester.ac.uk">bruno.adorno@manchester.ac.uk</a><br>
-                        Website: <a href="https://personalpages.manchester.ac.uk/staff/Bruno.Adorno/">Manchester
-                            Profile</a>
-                    </div>
+                    <span style="font-size:0.8rem;">Senior Lecturer in Robotics, University of Manchester, UK</span><br>
+                    <span style="font-size:0.78rem;color:#555;">
+                        Email: <a href="mailto:bruno.adorno@manchester.ac.uk">bruno.adorno@manchester.ac.uk</a>
+                        &nbsp;|&nbsp;
+                        <a href="https://personalpages.manchester.ac.uk/staff/Bruno.Adorno/">Personal website</a>
+                    </span>
                 </div>
             </div>
 
             <div class="organizer-row">
-                <img src="/images/org_nilanjan.jpg" alt="Nilanjan Chakraborty" class="organizer-photo"
-                    onerror="this.src='https://via.placeholder.com/150x150/6a9fb5/ffffff?text=NC'">
-                <div>
+                <img src="/images/org_chakraborty.jpg" alt="Nilanjan Chakraborty" class="org-photo"
+                    onerror="this.src='https://via.placeholder.com/100x100/6a9fb5/ffffff?text=NC'">
+                <div class="org-info">
                     <strong>Prof. Nilanjan Chakraborty</strong><br>
-                    <div class="info" style="font-size:0.78rem;">
-                        Associate Professor, Department of Mechanical Engineering, Stony Brook University, USA<br>
-                        Address: 100 Nicolls Road, Stony Brook, NY 11794<br>
+                    <span style="font-size:0.8rem;">Associate Professor, Department of Mechanical Engineering, Stony
+                        Brook University, USA</span><br>
+                    <span style="font-size:0.78rem;color:#555;">
                         Email: <a
-                            href="mailto:nilanjan.chakraborty@stonybrook.edu">nilanjan.chakraborty@stonybrook.edu</a><br>
-                        Website: <a href="https://sites.google.com/a/stonybrook.edu/nilanjan/home">Stony Brook
-                            Profile</a>
-                    </div>
+                            href="mailto:nilanjan.chakraborty@stonybrook.edu">nilanjan.chakraborty@stonybrook.edu</a>
+                        &nbsp;|&nbsp;
+                        <a href="https://sites.google.com/a/stonybrook.edu/nilanjan/home">Personal website</a>
+                    </span>
                 </div>
             </div>
 
             <div class="organizer-row">
-                <img src="/images/org_seth.jpg" alt="Seth Hutchinson" class="organizer-photo"
-                    onerror="this.src='https://via.placeholder.com/150x150/6a9fb5/ffffff?text=SH'">
-                <div>
+                <img src="/images/org_hutchinson.jpg" alt="Seth Hutchinson" class="org-photo"
+                    onerror="this.src='https://via.placeholder.com/100x100/6a9fb5/ffffff?text=SH'">
+                <div class="org-info">
                     <strong>Prof. Seth Hutchinson</strong><br>
-                    <div class="info" style="font-size:0.78rem;">
-                        Professor of Computer Science, Northeastern University, USA<br>
-                        Address: Northeastern University EXP, 815 Columbus Ave, Boston, MA 02120<br>
-                        Email: <a href="mailto:s.hutchinson@northeastern.edu">s.hutchinson@northeastern.edu</a><br>
-                        Website: <a href="https://coe.northeastern.edu/people/hutchinson-seth/">Northeastern Profile</a>
-                    </div>
+                    <span style="font-size:0.8rem;">Professor of Computer Science, Northeastern University,
+                        USA</span><br>
+                    <span style="font-size:0.78rem;color:#555;">
+                        Email: <a href="mailto:s.hutchinson@northeastern.edu">s.hutchinson@northeastern.edu</a>
+                        &nbsp;|&nbsp;
+                        <a href="https://coe.northeastern.edu/people/hutchinson-seth/">Personal website</a>
+                    </span>
                 </div>
             </div>
 
             <div class="organizer-row">
-                <img src="/images/org_sylvain.jpg" alt="Sylvain Calinon" class="organizer-photo"
-                    onerror="this.src='https://via.placeholder.com/150x150/6a9fb5/ffffff?text=SC'">
-                <div>
+                <img src="/images/org_calinon.jpg" alt="Sylvain Calinon" class="org-photo"
+                    onerror="this.src='https://via.placeholder.com/100x100/6a9fb5/ffffff?text=SC'">
+                <div class="org-info">
                     <strong>Prof. Sylvain Calinon</strong><br>
-                    <div class="info" style="font-size:0.78rem;">
-                        Senior Research Scientist &amp; Leader, Robot Learning &amp; Interaction Group, Idiap Research
-                        Institute, Switzerland<br>
-                        Address: Centre du Parc, Martigny, Switzerland<br>
-                        Email: <a href="mailto:sylvain.calinon@idiap.ch">sylvain.calinon@idiap.ch</a><br>
-                        Website: <a href="https://calinon.ch/">calinon.ch</a>
-                    </div>
+                    <span style="font-size:0.8rem;">Senior Research Scientist &amp; Leader, Robot Learning &amp;
+                        Interaction Group, Idiap Research Institute, Switzerland</span><br>
+                    <span style="font-size:0.78rem;color:#555;">
+                        Email: <a href="mailto:sylvain.calinon@idiap.ch">sylvain.calinon@idiap.ch</a> &nbsp;|&nbsp;
+                        <a href="https://calinon.ch/">Personal website</a>
+                    </span>
                 </div>
             </div>
 
