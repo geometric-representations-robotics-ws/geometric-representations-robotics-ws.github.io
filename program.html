@@ -32,50 +32,33 @@
             text-align: justify;
         }
 
-        table tr.gradient-row-blue {
-            background: linear-gradient(135deg, rgba(42, 100, 150, 0.16) 0%, rgba(42, 100, 150, 0.08) 50%, transparent 100%) !important;
+        .tbd-box {
+            background: linear-gradient(135deg, rgba(42, 100, 150, 0.08), rgba(106, 159, 181, 0.15));
+            border: 2px solid #6a9fb5;
+            border-radius: 8px;
+            padding: 1.5rem 2rem;
+            margin: 1.5rem 0 2rem 0;
+            text-align: center;
         }
 
-        table tr.gradient-row-blue td {
-            background: transparent !important;
+        .tbd-box p {
+            text-align: center !important;
+            color: #444;
+            font-size: 1.05rem;
+            margin: 0;
         }
 
-        table tr.gradient-row-blue:nth-child(even),
-        table tr.gradient-row-blue:nth-child(odd) {
-            background: linear-gradient(135deg, rgba(42, 100, 150, 0.16) 0%, rgba(42, 100, 150, 0.08) 50%, transparent 100%) !important;
-        }
-
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        table td,
-        table th {
-            padding: 0.4rem 0.6rem;
-            vertical-align: top;
-        }
-
-        table th {
-            background: #2a6496 !important;
-            color: white !important;
+        .tbd-badge {
+            display: inline-block;
+            background: #2a6496;
+            color: white;
+            font-size: 0.8rem;
+            padding: 4px 12px;
+            border-radius: 12px;
             font-family: "PT Sans", sans-serif;
-        }
-
-        table thead tr {
-            background: #2a6496 !important;
-        }
-
-        table thead th {
-            background: #2a6496 !important;
-            color: white !important;
-        }
-
-        table td:first-child {
-            white-space: nowrap;
-            font-size: 0.85rem;
-            color: #555;
-            min-width: 100px;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            margin-bottom: 0.75rem;
         }
     </style>
 </head>
@@ -126,146 +109,28 @@
 
             <p>The full-day workshop features five complementary session types: keynote talks, thematic panel
                 discussions, spotlight teaser presentations, poster sessions, and Geometric Representation
-                Interdisciplinary Impact Clinics (GRIIC). The schedule below is indicative — the final version will be
-                confirmed closer to the event.</p>
+                Interdisciplinary Impact Clinics (GRIIC).</p>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Time (TBD)</th>
-                        <th>Session</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="gradient-row-blue">
-                        <td colspan="2"><strong>Opening</strong></td>
-                    </tr>
-                    <tr>
-                        <td>09:00–09:10</td>
-                        <td><strong>Welcome &amp; Opening Remarks</strong> (organizers)</td>
-                    </tr>
-
-                    <tr class="gradient-row-blue">
-                        <td colspan="2"><strong>Block I — Geometric Priors &amp; Groundings for Sensing</strong></td>
-                    </tr>
-                    <tr>
-                        <td>09:10–09:40</td>
-                        <td><strong>Invited Talk:</strong> Prof. Joan Lasenby (Cambridge) (+ Q&amp;A)</td>
-                    </tr>
-                    <tr>
-                        <td>09:40–10:10</td>
-                        <td><strong>Invited Talk:</strong> Prof. Georgia Chalvatzaki (TU Darmstadt) (+ Q&amp;A)</td>
-                    </tr>
-                    <tr>
-                        <td>10:10–10:20</td>
-                        <td><strong>Spotlight Teaser Talks</strong> — Block I</td>
-                    </tr>
-                    <tr>
-                        <td>10:20–10:40</td>
-                        <td>Panel Discussion + Geometric Representation Interdisciplinary Impact Clinics — Block I</td>
-                    </tr>
-                    <tr class="gradient-row-blue">
-                        <td>10:40–11:10</td>
-                        <td><strong>Coffee Break + Poster / Demo Session I</strong></td>
-                    </tr>
-
-                    <tr class="gradient-row-blue">
-                        <td colspan="2"><strong>Block II — Structure-Preserving Learning &amp; Manifold-Valued
-                                Representations</strong></td>
-                    </tr>
-                    <tr>
-                        <td>11:10–11:40</td>
-                        <td><strong>Invited Talk:</strong> Arne Sachtler (TUM / DLR) (+ Q&amp;A)</td>
-                    </tr>
-                    <tr>
-                        <td>11:40–12:10</td>
-                        <td><strong>Invited Talk:</strong> Prof. Constantinos Chamzas (WPI) (+ Q&amp;A)</td>
-                    </tr>
-                    <tr>
-                        <td>12:10–12:20</td>
-                        <td><strong>Spotlight Teaser Talks</strong> — Block II</td>
-                    </tr>
-                    <tr>
-                        <td>12:20–12:40</td>
-                        <td>Panel Discussion + Geometric Representation Interdisciplinary Impact Clinics — Block II</td>
-                    </tr>
-                    <tr class="gradient-row-blue">
-                        <td>12:40–13:40</td>
-                        <td><strong>Lunch + Poster / Demo Session II</strong></td>
-                    </tr>
-
-                    <tr class="gradient-row-blue">
-                        <td colspan="2"><strong>Block III — Geometry-Aware Planning, Optimization &amp; Control</strong>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>13:40–14:10</td>
-                        <td><strong>Invited Talk:</strong> Prof. Robert Mahony (ANU) (+ Q&amp;A)</td>
-                    </tr>
-                    <tr>
-                        <td>14:10–14:40</td>
-                        <td><strong>Invited Talk:</strong> Dr. Johannes Lachner (MIT) (+ Q&amp;A)</td>
-                    </tr>
-                    <tr>
-                        <td>14:40–14:50</td>
-                        <td><strong>Spotlight Teaser Talks</strong> — Block III</td>
-                    </tr>
-                    <tr>
-                        <td>14:50–15:10</td>
-                        <td>Panel Discussion + Geometric Representation Interdisciplinary Impact Clinics — Block III</td>
-                    </tr>
-                    <tr class="gradient-row-blue">
-                        <td>15:10–15:40</td>
-                        <td><strong>Coffee Break + Poster / Demo Session III</strong></td>
-                    </tr>
-
-                    <tr class="gradient-row-blue">
-                        <td colspan="2"><strong>Block IV — Geometric World Models, Affordances &amp; Generative
-                                Representations</strong></td>
-                    </tr>
-                    <tr>
-                        <td>15:40–16:10</td>
-                        <td><strong>Invited Talk:</strong> Prof. Jen Jen Chung (Univ. Queensland) (+ Q&amp;A)</td>
-                    </tr>
-                    <tr>
-                        <td>16:10–16:40</td>
-                        <td><strong>Invited Talk:</strong> Prof. Francesco Bullo (UC Santa Barbara) (+ Q&amp;A)</td>
-                    </tr>
-                    <tr>
-                        <td>16:40–16:50</td>
-                        <td><strong>Spotlight Teaser Talks</strong> — Block IV</td>
-                    </tr>
-                    <tr>
-                        <td>16:50–17:10</td>
-                        <td>Panel Discussion + Geometric Representation Interdisciplinary Impact Clinics — Block IV</td>
-                    </tr>
-                    <tr class="gradient-row-blue">
-                        <td>17:10–17:30</td>
-                        <td><strong>Round Table Discussion &amp; Closing Remarks</strong> (all organisers + speakers)
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <br>
-            <p><em>Note: The program is indicative. Final schedule will be updated once logistics are confirmed by IROS
-                    2026.</em></p>
+            <div class="tbd-box">
+                <div class="tbd-badge">Schedule — TBD</div>
+                <p>The detailed session schedule will be announced closer to the workshop date.<br>
+                    <strong>Workshop date:</strong> October 1, 2026 — IROS 2026, Pittsburgh, PA, USA</p>
+            </div>
 
             <h2>Session Formats</h2>
             <hr class="section-divider">
 
             <ul>
-                <li><strong>Keynote Talks:</strong> 30-minute presentations by invited speakers, each followed by 5
-                    minutes of Q&amp;A.</li>
-                <li><strong>Thematic Panel Discussions:</strong> 15-minute focused discussions following each keynote
-                    block, with all block speakers and audience participation.</li>
+                <li><strong>Keynote Talks:</strong> 30-minute presentations by invited speakers, each followed by Q&amp;A.</li>
+                <li><strong>Thematic Panel Discussions:</strong> Focused discussions following each keynote block, with
+                    all block speakers and audience participation.</li>
                 <li><strong>Spotlight Teaser Talks:</strong> 3–5 minute presentations by authors of accepted contributed
                     papers, encouraging discussion at the poster session.</li>
                 <li><strong>Poster / Demo Sessions:</strong> Interactive sessions during breaks where contributors
                     present their work and receive direct feedback from speakers and attendees.</li>
-                <li><strong>Geometric Representation Interdisciplinary Impact Clinics (GRIIC):</strong> Small-group mentoring sessions where
-                    early-career researchers receive tailored feedback from senior invited speakers on their research
-                    approaches and directions.</li>
+                <li><strong>Geometric Representation Interdisciplinary Impact Clinics (GRIIC):</strong> Small-group
+                    mentoring sessions where early-career researchers receive tailored feedback from senior invited
+                    speakers on their research approaches and directions.</li>
             </ul>
 
             <h2>Accepted Papers</h2>
