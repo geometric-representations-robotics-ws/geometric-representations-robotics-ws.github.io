@@ -5,8 +5,8 @@ This repository hosts the website for the **2nd Workshop on Geometric-Aware Repr
 ## Workshop Details
 
 - **Conference:** IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2026)
-- **Location:** Abu Dhabi, UAE
-- **Date:** TBD, October 2026
+- **Location:** Pittsburgh, USA
+- **Date:** 1st, October 2026
 
 ## Website Structure
 
