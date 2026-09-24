@@ -32,55 +32,80 @@
             text-align: justify;
         }
 
-        table tr.gradient-row-blue {
+        table.program-table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+
+        table.program-table tr.gradient-row-blue {
             background: linear-gradient(135deg, rgba(42, 100, 150, 0.16) 0%, rgba(42, 100, 150, 0.08) 50%, transparent 100%) !important;
         }
 
-        table tr.gradient-row-blue td {
+        table.program-table tr.gradient-row-blue td {
             background: transparent !important;
         }
 
-        table tr.gradient-row-blue:nth-child(even),
-        table tr.gradient-row-blue:nth-child(odd) {
-            background: linear-gradient(135deg, rgba(42, 100, 150, 0.16) 0%, rgba(42, 100, 150, 0.08) 50%, transparent 100%) !important;
-        }
-
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        table td,
-        table th {
-            padding: 0.4rem 0.6rem;
+        table.program-table td,
+        table.program-table th {
+            padding: 0.5rem 0.75rem;
             vertical-align: top;
         }
 
-        table th {
+        table.program-table th {
             background: #2a6496 !important;
             color: white !important;
             font-family: "PT Sans", sans-serif;
         }
 
-        table thead tr {
+        table.program-table thead tr {
             background: #2a6496 !important;
         }
 
-        table thead th {
+        table.program-table thead th {
             background: #2a6496 !important;
             color: white !important;
         }
 
-        table td:first-child {
+        table.program-table td.time-col {
             white-space: nowrap;
             font-size: 0.85rem;
             color: #555;
             width: 110px;
             min-width: 110px;
+            font-family: "PT Sans", sans-serif;
         }
 
-        tr.speaker-talk-row td {
-            height: 44px;
+        .break-row td {
+            background: #f8f9fa;
+            color: #444;
+            font-style: normal;
+        }
+
+        .talk-details {
+            margin-top: 0.4rem;
+            background: #fdfdfd;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            padding: 0.4rem 0.8rem;
+            font-size: 0.85rem;
+        }
+
+        .talk-details summary {
+            cursor: pointer;
+            color: #2a6496;
+            font-weight: 600;
+        }
+
+        .talk-details summary:hover {
+            text-decoration: underline;
+        }
+
+        .talk-body {
+            margin-top: 0.4rem;
+            color: #333;
+            font-size: 0.82rem;
+            line-height: 1.4;
         }
     </style>
 </head>
@@ -129,15 +154,14 @@
             <h1>Workshop Program</h1>
             <hr class="section-divider">
 
-            <p>The full-day workshop features five complementary session types: keynote talks, thematic panel
-                discussions, spotlight teaser presentations, poster sessions, and Geometric Representation
-                Interdisciplinary Impact Clinics (GRIIC).</p>
+            <p>The full-day workshop features keynotes, panel debates, spotlight talks, poster sessions, and interactive interdisciplinary clinics.<br>
+            <strong>Workshop date:</strong> October 1, 2026 — IROS 2026, Pittsburgh, PA, USA.</p>
 
-            <table>
+            <table class="program-table">
                 <thead>
                     <tr>
-                        <th>Time</th>
-                        <th>Session</th>
+                        <th class="time-col">Time</th>
+                        <th>Session / Talk</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -145,88 +169,153 @@
                         <td colspan="2"><strong>Opening</strong></td>
                     </tr>
                     <tr>
-                        <td>09:00–09:10</td>
-                        <td><strong>Welcome &amp; Opening Remarks</strong> (organizers)</td>
+                        <td class="time-col">09:00–09:10</td>
+                        <td><strong>Welcome &amp; Opening Remarks</strong> (Organizers)</td>
                     </tr>
 
                     <tr class="gradient-row-blue">
-                        <td colspan="2"><strong>Block I — Geometric Priors &amp; Groundings for Sensing</strong></td>
-                    </tr>
-                    <tr class="speaker-talk-row">
-                        <td>09:10–09:45</td>
-                        <td><strong>Invited Talk:</strong> Prof. Joan Lasenby (Cambridge) (+ Q&amp;A)</td>
-                    </tr>
-                    <tr class="speaker-talk-row">
-                        <td>09:45–10:20</td>
-                        <td><strong>Invited Talk:</strong> Arne Sachtler (TUM / DLR) (+ Q&amp;A)</td>
+                        <td colspan="2"><strong>Block I</strong></td>
                     </tr>
                     <tr>
-                        <td>10:25–10:50</td>
+                        <td class="time-col">09:10–09:45</td>
+                        <td>
+                            <div>
+                                <strong>Invited Talk:</strong> Prof. Georgia Chalvatzaki 
+                                <span style="color: #666; font-size: 0.9rem;">(Technical University of Darmstadt)</span>
+                                <span style="color: #888; font-size: 0.85rem;">[30+5 min talk + Q&amp;A]</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="time-col">09:45–10:20</td>
+                        <td>
+                            <div>
+                                <strong>Invited Talk:</strong> Dr. Arne Sachtler
+                                <span style="color: #666; font-size: 0.9rem;">(Technical University of Munich, German Aerospace Center (DLR))</span>
+                                <span style="color: #888; font-size: 0.85rem;">[30+5 min talk + Q&amp;A]</span>
+                            </div>
+
+                            <details class="talk-details">
+                                <summary><strong>Title:</strong> Riding the Dynamics: Motion Manifolds from Gymnastics to Pick-and-Place</summary>
+                                <div class="talk-body">
+                                    <p style="margin-bottom: 0.3rem;"><strong>Abstract:</strong></p>
+                                    <p style="margin: 0; text-align: justify;">
+                                        Much of geometric robotics builds structure into the representation. This talk is about structure the robot already has: the metric its kinetic energy defines on configuration space, and the invariant submanifolds its dynamics carve out of the tangent bundle. Natural motion manifolds compactly represent the motions a system performs at low actuation cost, obtained from the conservative dynamics alone, without data. On Mody, a direct-drive double pendulum with a small fraction of the torque it would need to lift itself, this yields large-amplitude gymnastic swings on hardware. Preliminary results extend the idea to cyclic pick-and-place: for light payloads, the task becomes a periodic orbit whose turning points sit at the pick and place locations, leaving actuation to cover only dissipation. An outlook addresses heavier objects, where grasping alters the dynamics itself.
+                                    </p>
+                                </div>
+                            </details>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="time-col">10:25–10:50</td>
                         <td><strong>Spotlight Talks (10min+2)</strong></td>
                     </tr>
-                    <tr class="gradient-row-blue">
-                        <td>10:50–11:10</td>
-                        <td><strong>Coffee Break &amp; Poster Session</strong></td>
+
+                    <tr class="break-row">
+                        <td class="time-col">10:50–11:10</td>
+                        <td><strong>☕ Morning Coffee Break &amp; Poster Session</strong></td>
                     </tr>
 
-                    <tr class="gradient-row-blue">
-                        <td colspan="2"><strong>Block II — Structure-Preserving Learning &amp; Manifold-Valued Representations</strong></td>
-                    </tr>
-                    <tr class="speaker-talk-row">
-                        <td>11:10–11:45</td>
-                        <td><strong>Invited Talk:</strong> Prof. Constantinos Chamzas (WPI) (+ Q&amp;A)</td>
-                    </tr>
-                    <tr class="speaker-talk-row">
-                        <td>11:45–12:20</td>
-                        <td><strong>Invited Talk:</strong> Dr. Johannes Lachner (Purdue) (+ Q&amp;A)</td>
+                    <tr>
+                        <td class="time-col">11:10–11:45</td>
+                        <td>
+                            <div>
+                                <strong>Invited Talk:</strong> Prof. Constantinos Chamzas 
+                                <span style="color: #666; font-size: 0.9rem;">(Worcester Polytechnic Institute)</span>
+                                <span style="color: #888; font-size: 0.85rem;">[30+5 min talk + Q&amp;A]</span>
+                            </div>
+
+                            <details class="talk-details">
+                                <summary><strong>Title:</strong> From Interaction to Composition: Structured Learning and Planning for Robot Manipulation</summary>
+                                <div class="talk-body">
+                                    <p style="margin-bottom: 0.3rem;"><strong>Abstract:</strong></p>
+                                    <p style="margin: 0; text-align: justify;">
+                                        General-purpose manipulation requires robots to reason about structure at multiple levels, from continuous motion and physical interaction to uncertainty and long-horizon task composition. This talk presents recent work from the ELPIS Lab exploring these representations using contact-rich manipulation as a running example. It begins with geometric representations for generating task-space motions on redundant manipulators, then examines learned models of physical interaction and geometric reasoning about uncertainty during planning. It next considers how planning and execution can be coupled to adapt when reality deviates from prediction. Finally, the talk moves from continuous interaction to grounded symbolic representations that support long-horizon task planning. Together, these works illustrate how structured representations can connect motion, learning, planning, and abstraction toward more general-purpose robotic manipulation.
+                                    </p>
+                                </div>
+                            </details>
+                        </td>
                     </tr>
                     <tr>
-                        <td>12:20–12:50</td>
-                        <td><strong>Panel Discussion / Debate</strong></td>
+                        <td class="time-col">11:45–12:20</td>
+                        <td>
+                            <div>
+                                <strong>Invited Talk:</strong> Prof. Jonathan Kelly 
+                                <span style="color: #666; font-size: 0.9rem;">(University of Toronto)</span>
+                                <span style="color: #888; font-size: 0.85rem;">[30+5 min talk + Q&amp;A]</span>
+                            </div>
+                        </td>
                     </tr>
-                    <tr class="gradient-row-blue">
-                        <td>12:50–13:30</td>
-                        <td><strong>Lunch &amp; Poster Session</strong></td>
+                    
+                    <tr>
+                        <td class="time-col">12:20–12:50</td>
+                        <td><strong>Debate</strong> (Invited Speakers)</td>
                     </tr>
 
+                    <tr class="break-row">
+                        <td class="time-col">12:50–13:30</td>
+                        <td><strong>🍽 Lunch Break</strong></td>
+                    </tr>
+                    
                     <tr class="gradient-row-blue">
-                        <td colspan="2"><strong>Block III — Geometry-Aware Planning, Optimization &amp; Control</strong></td>
+                        <td colspan="2"><strong>Block II</strong></td>
                     </tr>
+
                     <tr>
-                        <td>13:30–13:40</td>
-                        <td><strong>Afternoon Welcome</strong> (organizers)</td>
+                        <td class="time-col">13:30–13:40</td>
+                        <td><strong>Afternoon Welcome &amp; Opening Remarks</strong> (Organizers)</td>
                     </tr>
+
                     <tr>
-                        <td>13:40–14:20</td>
+                        <td class="time-col">13:40–14:20</td>
                         <td><strong>Spotlight Talks</strong></td>
                     </tr>
-                    <tr class="speaker-talk-row">
-                        <td>14:20–14:55</td>
-                        <td><strong>Invited Talk:</strong> Prof. Georgia Chalvatzaki (TU Darmstadt) (+ Q&amp;A)</td>
+
+                    <tr>
+                        <td class="time-col">14:20–14:55</td>
+                        <td>
+                            <div>
+                                <strong>Invited Talk:</strong> Prof. Katerina Fragkiadaki
+                                <span style="color: #666; font-size: 0.9rem;">(Carnegie Mellon University)</span>
+                                <span style="color: #888; font-size: 0.85rem;">[30+5 min talk + Q&amp;A]</span>
+                            </div>
+                        </td>
                     </tr>
-                    <tr class="speaker-talk-row">
-                        <td>14:55–15:30</td>
-                        <td><strong>Invited Talk:</strong> Prof. Robert Mahony (ANU) (+ Q&amp;A)</td>
+                    <tr>
+                        <td class="time-col">14:55–15:30</td>
+                        <td>
+                            <div>
+                                <strong>Invited Talk:</strong> Dr. Johannes Lachner 
+                                <span style="color: #666; font-size: 0.9rem;">(Purdue University)</span>
+                                <span style="color: #888; font-size: 0.85rem;">[30+5 min talk + Q&amp;A]</span>
+                            </div>
+                        </td>
                     </tr>
-                    <tr class="gradient-row-blue">
-                        <td>15:30–16:00</td>
-                        <td><strong>Coffee Break &amp; Poster Session</strong></td>
+
+                    <tr class="break-row">
+                        <td class="time-col">15:30–16:00</td>
+                        <td><strong>☕ Afternoon Coffee Break &amp; Poster Session</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td class="time-col">16:00–16:35</td>
+                        <td>
+                            <div>
+                                <strong>Invited Talk:</strong> Dr. Tobias Löw 
+                                <span style="color: #666; font-size: 0.9rem;">(University of Washington)</span>
+                                <span style="color: #888; font-size: 0.85rem;">[30+5 min talk + Q&amp;A]</span>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="time-col">16:35–17:05</td>
+                        <td><strong>Debate</strong> (Invited Speakers)</td>
                     </tr>
 
                     <tr class="gradient-row-blue">
-                        <td colspan="2"><strong>Block IV — Geometric World Models, Affordances &amp; Generative Representations</strong></td>
-                    </tr>
-                    <tr class="speaker-talk-row">
-                        <td>16:00–16:35</td>
-                        <td><strong>Invited Talk:</strong> Tobias Löw (UW / Organizer) (+ Q&amp;A)</td>
-                    </tr>
-                    <tr>
-                        <td>16:35–17:10</td>
-                        <td><strong>Panel Discussion / Debate</strong></td>
-                    </tr>
-                    <tr class="gradient-row-blue">
-                        <td>17:10–17:25</td>
-                        <td><strong>Closing Remarks &amp; Awards</strong> (organizers)</td>
+                        <td class="time-col">17:05–17:15</td>
+                        <td><strong>Closing Remarks &amp; Awards</strong> (Organizers)</td>
                     </tr>
                 </tbody>
             </table>
@@ -235,17 +324,10 @@
             <hr class="section-divider">
 
             <ul>
-                <li><strong>Keynote Talks:</strong> 30-minute presentations by invited speakers, each followed by 5
-                    minutes of Q&amp;A.</li>
-                <li><strong>Thematic Panel Discussions:</strong> 15-minute focused discussions following each keynote
-                    block, with all block speakers and audience participation.</li>
-                <li><strong>Spotlight Teaser Talks:</strong> 3–5 minute presentations by authors of accepted contributed
-                    papers, encouraging discussion at the poster session.</li>
-                <li><strong>Poster / Demo Sessions:</strong> Interactive sessions during breaks where contributors
-                    present their work and receive direct feedback from speakers and attendees.</li>
-                <li><strong>Geometric Representation Interdisciplinary Impact Clinics (GRIIC):</strong> Small-group mentoring sessions where
-                    early-career researchers receive tailored feedback from senior invited speakers on their research
-                    approaches and directions.</li>
+                <li><strong>Keynote Talks:</strong> 30-minute presentations by invited speakers, each followed by Q&amp;A.</li>
+                <li><strong>Thematic Panel Discussions / Debates:</strong> Focused discussions with block speakers and audience participation.</li>
+                <li><strong>Spotlight Teaser Talks:</strong> 3–5 minute presentations by authors of accepted contributed papers.</li>
+                <li><strong>Poster Sessions:</strong> Interactive sessions during breaks where contributors present their work.</li>
             </ul>
 
             <h2>Accepted Papers</h2>
