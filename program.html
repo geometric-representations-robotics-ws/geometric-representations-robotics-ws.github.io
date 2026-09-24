@@ -60,6 +60,12 @@
             letter-spacing: 0.04em;
             margin-bottom: 0.75rem;
         }
+
+        .break-row td {
+            background: #f3f3f3;
+            color: #555;
+            font-style: italic;
+        }
     </style>
 </head>
 
@@ -154,6 +160,16 @@
                                 <span style="color: #666; font-size: 0.9rem;">(Technical University of Munich, German Aerospace Center (DLR))</span>
                                 <span style="color: #888; font-size: 0.85rem;">[30+5 min talk + Q&amp;A]</span>
                             </div>
+
+                            <details class="talk-details">
+                                <summary><strong>Title:</strong> Riding the Dynamics: Motion Manifolds from Gymnastics to Pick-and-Place</summary>
+                                <div class="talk-body">
+                                    <p style="margin-bottom: 0.3rem;"><strong>Abstract:</strong></p>
+                                    <p style="margin: 0; text-align: justify;">
+                                        Much of geometric robotics builds structure into the representation. This talk is about structure the robot already has: the metric its kinetic energy defines on configuration space, and the invariant submanifolds its dynamics carve out of the tangent bundle. Natural motion manifolds compactly represent the motions a system performs at low actuation cost, obtained from the conservative dynamics alone, without data. On Mody, a direct-drive double pendulum with a small fraction of the torque it would need to lift itself, this yields large-amplitude gymnastic swings on hardware. Preliminary results extend the idea to cyclic pick-and-place: for light payloads, the task becomes a periodic orbit whose turning points sit at the pick and place locations, leaving actuation to cover only dissipation. An outlook addresses heavier objects, where grasping alters the dynamics itself.
+                                    </p>
+                                </div>
+                            </details>
                         </td>
                     </tr>
                     <tr>
@@ -165,7 +181,7 @@
                                 <span style="color: #888; font-size: 0.85rem;">[30+5 min talk + Q&amp;A]</span>
                             </div>
 
-                            <!-- <details class="talk-details">
+                            <details class="talk-details">
                                 <summary><strong>Title:</strong> From Interaction to Composition: Structured Learning and Planning for Robot Manipulation</summary>
                                 <div class="talk-body">
                                     <p style="margin-bottom: 0.3rem;"><strong>Abstract:</strong></p>
@@ -173,11 +189,17 @@
                                         General-purpose manipulation requires robots to reason about structure at multiple levels, from continuous motion and physical interaction to uncertainty and long-horizon task composition. This talk presents recent work from the ELPIS Lab exploring these representations using contact-rich manipulation as a running example. It begins with geometric representations for generating task-space motions on redundant manipulators, then examines learned models of physical interaction and geometric reasoning about uncertainty during planning. It next considers how planning and execution can be coupled to adapt when reality deviates from prediction. Finally, the talk moves from continuous interaction to grounded symbolic representations that support long-horizon task planning. Together, these works illustrate how structured representations can connect motion, learning, planning, and abstraction toward more general-purpose robotic manipulation.
                                     </p>
                                 </div>
-                            </details> -->
+                            </details>
                         </td>
                     </tr>
+
+                    <tr class="break-row">
+                        <td class="time-col">10:55–11:10</td>
+                        <td><strong>☕ Morning Coffee Break</strong> &amp; Poster / Demo Session</td>
+                    </tr>
+
                     <tr>
-                        <td class="time-col">10:55–11:30</td>
+                        <td class="time-col">11:10–11:45</td>
                         <td>
                             <div>
                                 <strong>Invited Talk:</strong> Prof. Jonathan Kelly 
@@ -188,13 +210,18 @@
                     </tr>
                     
                     <tr>
-                        <td class="time-col">11:30–12:00</td>
+                        <td class="time-col">11:45–12:10</td>
                         <td><strong>Debate</strong> (Invited Speakers)</td>
                     </tr>
 
                     <tr>
-                        <td class="time-col">12:00–12:45</td>
-                        <td><strong>Selected Paper Discussion</strong> </td>
+                        <td class="time-col">12:10–12:30</td>
+                        <td><strong>Spotlight Talks &amp; Discussion</strong> <span style="color: #888; font-size: 0.85rem;">[timing to be adjusted once the number of spotlight papers is fixed]</span></td>
+                    </tr>
+
+                    <tr class="break-row">
+                        <td class="time-col">12:30–13:30</td>
+                        <td><strong>🍽 Lunch Break</strong></td>
                     </tr>
                     
                     <tr class="gradient-row-blue">
@@ -202,13 +229,12 @@
                     </tr>
 
                     <tr>
-                        <td class="time-col">14:00–14:10</td>
+                        <td class="time-col">13:30–13:40</td>
                         <td><strong>Afternoon Welcome &amp; Opening Remarks</strong> (Organizers)</td>
                     </tr>
 
-                    
                     <tr>
-                        <td class="time-col">14:10–14:45</td>
+                        <td class="time-col">13:40–14:15</td>
                         <td>
                             <div>
                                 <strong>Invited Talk:</strong> Prof. Katerina Fragkiadaki
@@ -218,7 +244,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="time-col">14:45–15:20</td>
+                        <td class="time-col">14:15–14:50</td>
                         <td>
                             <div>
                                 <strong>Invited Talk:</strong> Dr. Johannes Lachner 
@@ -228,7 +254,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="time-col">15:20–15:55</td>
+                        <td class="time-col">14:50–15:25</td>
                         <td>
                             <div>
                                 <strong>Invited Talk:</strong> Dr. Tobias Löw 
@@ -239,13 +265,18 @@
                     </tr>
 
                     <tr>
-                        <td class="time-col">15:55–16:25</td>
+                        <td class="time-col">15:25–15:55</td>
                         <td><strong>Debate</strong> (Invited Speakers)</td>
                     </tr>
 
+                    <tr class="break-row">
+                        <td class="time-col">15:55–16:15</td>
+                        <td><strong>☕ Afternoon Coffee Break</strong> &amp; Poster / Demo Session</td>
+                    </tr>
+
                     <tr>
-                        <td class="time-col">16:25–17:10</td>
-                        <td><strong>Selected Paper Discussion</strong></td>
+                        <td class="time-col">16:15–17:10</td>
+                        <td><strong>Spotlight Talks &amp; Poster Session</strong> <span style="color: #888; font-size: 0.85rem;">[timing to be adjusted once the number of spotlight papers is fixed]</span></td>
                     </tr>
                 </tbody>
             </table>
