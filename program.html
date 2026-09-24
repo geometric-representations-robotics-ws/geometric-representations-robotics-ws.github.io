@@ -32,33 +32,56 @@
             text-align: justify;
         }
 
-        .tbd-box {
-            background: linear-gradient(135deg, rgba(42, 100, 150, 0.08), rgba(106, 159, 181, 0.15));
-            border: 2px solid #6a9fb5;
-            border-radius: 8px;
-            padding: 1.5rem 2rem;
-            margin: 1.5rem 0 2rem 0;
-            text-align: center;
+        table tr.gradient-row-blue {
+            background: linear-gradient(135deg, rgba(42, 100, 150, 0.16) 0%, rgba(42, 100, 150, 0.08) 50%, transparent 100%) !important;
         }
 
-        .tbd-box p {
-            text-align: center !important;
-            color: #444;
-            font-size: 1.05rem;
-            margin: 0;
+        table tr.gradient-row-blue td {
+            background: transparent !important;
         }
 
-        .tbd-badge {
-            display: inline-block;
-            background: #2a6496;
-            color: white;
-            font-size: 0.8rem;
-            padding: 4px 12px;
-            border-radius: 12px;
+        table tr.gradient-row-blue:nth-child(even),
+        table tr.gradient-row-blue:nth-child(odd) {
+            background: linear-gradient(135deg, rgba(42, 100, 150, 0.16) 0%, rgba(42, 100, 150, 0.08) 50%, transparent 100%) !important;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+
+        table td,
+        table th {
+            padding: 0.45rem 0.65rem;
+            vertical-align: middle;
+        }
+
+        table th {
+            background: #2a6496 !important;
+            color: white !important;
             font-family: "PT Sans", sans-serif;
-            font-weight: 700;
-            letter-spacing: 0.04em;
-            margin-bottom: 0.75rem;
+        }
+
+        table thead tr {
+            background: #2a6496 !important;
+        }
+
+        table thead th {
+            background: #2a6496 !important;
+            color: white !important;
+        }
+
+        table td:first-child {
+            white-space: nowrap;
+            font-size: 0.85rem;
+            color: #555;
+            width: 110px;
+            min-width: 110px;
+        }
+
+        tr.speaker-talk-row td {
+            height: 44px;
         }
 
         .break-row td {
@@ -113,15 +136,106 @@
             <h1>Workshop Program</h1>
             <hr class="section-divider">
 
-            <p>The full-day workshop features five complementary session types: keynote talks, thematic panel
-                discussions, spotlight teaser presentations, poster sessions, and Geometric Representation
-                Interdisciplinary Impact Clinics (GRIIC).</p>
+            <p>The full-day workshop features keynotes, panel debates, spotlight talks, poster sessions, and interactive interdisciplinary clinics.
+            <strong>Workshop date:</strong> October 1, 2026 — IROS 2026, Pittsburgh, PA, USA.</p>
 
-            <div class="tbd-box">
-                <div class="tbd-badge">Schedule — TBD</div>
-                <p>The detailed session schedule will be announced closer to the workshop date.<br>
-                    <strong>Workshop date:</strong> October 1, 2026 — IROS 2026, Pittsburgh, PA, USA</p>
-            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Session</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="gradient-row-blue">
+                        <td colspan="2"><strong>Opening</strong></td>
+                    </tr>
+                    <tr>
+                        <td>09:00–09:10</td>
+                        <td><strong>Welcome &amp; Opening Remarks</strong> (organizers)</td>
+                    </tr>
+
+                    <tr class="gradient-row-blue">
+                        <td colspan="2"><strong>Block I — Geometric Priors &amp; Groundings for Sensing</strong></td>
+                    </tr>
+                    <tr class="speaker-talk-row">
+                        <td>09:10–09:45</td>
+                        <td><strong>Invited Talk:</strong> Prof. Joan Lasenby (Cambridge) (+ Q&amp;A)</td>
+                    </tr>
+                    <tr class="speaker-talk-row">
+                        <td>09:45–10:20</td>
+                        <td><strong>Invited Talk:</strong> Arne Sachtler (TUM / DLR) (+ Q&amp;A)</td>
+                    </tr>
+                    <tr>
+                        <td>10:25–10:50</td>
+                        <td><strong>Spotlight Talks (10min+2)</strong></td>
+                    </tr>
+                    <tr class="gradient-row-blue">
+                        <td>10:50–11:10</td>
+                        <td><strong>Coffee Break &amp; Poster Session</strong></td>
+                    </tr>
+
+                    <tr class="gradient-row-blue">
+                        <td colspan="2"><strong>Block II — Structure-Preserving Learning &amp; Manifold-Valued Representations</strong></td>
+                    </tr>
+                    <tr class="speaker-talk-row">
+                        <td>11:10–11:45</td>
+                        <td><strong>Invited Talk:</strong> Prof. Constantinos Chamzas (WPI) (+ Q&amp;A)</td>
+                    </tr>
+                    <tr class="speaker-talk-row">
+                        <td>11:45–12:20</td>
+                        <td><strong>Invited Talk:</strong> Dr. Johannes Lachner (Purdue) (+ Q&amp;A)</td>
+                    </tr>
+                    <tr>
+                        <td>12:20–12:50</td>
+                        <td><strong>Panel Discussion / Debate</strong></td>
+                    </tr>
+                    <tr class="gradient-row-blue">
+                        <td>12:50–13:30</td>
+                        <td><strong>Lunch &amp; Poster Session</strong></td>
+                    </tr>
+
+                    <tr class="gradient-row-blue">
+                        <td colspan="2"><strong>Block III — Geometry-Aware Planning, Optimization &amp; Control</strong></td>
+                    </tr>
+                    <tr>
+                        <td>13:30–13:40</td>
+                        <td><strong>Afternoon Welcome</strong> (organizers)</td>
+                    </tr>
+                    <tr>
+                        <td>13:40–14:20</td>
+                        <td><strong>Spotlight Talks</strong></td>
+                    </tr>
+                    <tr class="speaker-talk-row">
+                        <td>14:20–14:55</td>
+                        <td><strong>Invited Talk:</strong> Prof. Georgia Chalvatzaki (TU Darmstadt) (+ Q&amp;A)</td>
+                    </tr>
+                    <tr class="speaker-talk-row">
+                        <td>14:55–15:30</td>
+                        <td><strong>Invited Talk:</strong> Prof. Robert Mahony (ANU) (+ Q&amp;A)</td>
+                    </tr>
+                    <tr class="gradient-row-blue">
+                        <td>15:30–16:00</td>
+                        <td><strong>Coffee Break &amp; Poster Session</strong></td>
+                    </tr>
+
+                    <tr class="gradient-row-blue">
+                        <td colspan="2"><strong>Block IV — Geometric World Models, Affordances &amp; Generative Representations</strong></td>
+                    </tr>
+                    <tr class="speaker-talk-row">
+                        <td>16:00–16:35</td>
+                        <td><strong>Invited Talk:</strong> Tobias Löw (UW / Organizer) (+ Q&amp;A)</td>
+                    </tr>
+                    <tr>
+                        <td>16:35–17:10</td>
+                        <td><strong>Panel Discussion / Debate</strong></td>
+                    </tr>
+                    <tr class="gradient-row-blue">
+                        <td>17:10–17:25</td>
+                        <td><strong>Closing Remarks &amp; Awards</strong> (organizers)</td>
+                    </tr>
+                </tbody>
+            </table>
 
             <table class="program-table">
                 <thead>

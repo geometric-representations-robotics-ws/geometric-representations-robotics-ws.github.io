@@ -28,12 +28,15 @@
         }
 
         .speaker-row {
-            margin-bottom: 0.2rem;
-            padding: 0.5rem;
-            border-radius: 4px;
+            margin-bottom: 0.5rem;
+            padding: 0.5rem 0.75rem;
+            border-radius: 6px;
             display: flex;
-            align-items: flex-start;
+            align-items: center;
             gap: 1rem;
+            height: 135px;
+            box-sizing: border-box;
+            overflow: hidden;
         }
 
         .speaker-row:nth-child(even) {
@@ -46,8 +49,8 @@
 
         .speaker-photo {
             flex-shrink: 0;
-            width: 130px;
-            height: 130px;
+            width: 115px;
+            height: 115px;
             object-fit: cover;
             border-radius: 8px;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
@@ -55,6 +58,9 @@
 
         .speaker-info {
             flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .badge-confirmed {
@@ -140,144 +146,113 @@
                 control — united by the role of geometric structure in robotic manipulation.</p>
 
             <!-- ===== Speakers ===== -->
+            <div class="speaker-row">
+                <img src="/images/speaker_lasenby.jpg" alt="Joan Lasenby" class="speaker-photo"
+                    onerror="this.src='https://via.placeholder.com/115x115/6a9fb5/ffffff?text=JL'">
+                <div class="speaker-info">
+                    <div><strong>Prof. Joan Lasenby</strong> <span class="badge-confirmed">Confirmed</span></div>
+                    <div style="font-size:0.78rem; color:#444;">Professor, University of Cambridge, UK &nbsp;|&nbsp; <a href="https://www.eng.cam.ac.uk/profiles/jl221">Website</a></div>
+                    <p style="font-size: 0.74rem; color: rgba(65,64,64,0.9); margin-top: 0.2rem; line-height: 1.35; text-align: justify; margin-bottom: 0;">
+                        Joan Lasenby is a Professor in the Signal Processing and Communications Group at Cambridge. Her research focuses on applied geometric algebra, computer vision, and motion capture for estimation in physical systems.
+                    </p>
+                </div>
+            </div>
 
             <div class="speaker-row">
                 <img src="/images/speaker_chalvatzaki.jpg" alt="Georgia Chalvatzaki" class="speaker-photo"
-                    onerror="this.src='https://via.placeholder.com/130x130/6a9fb5/ffffff?text=GC'">
+                    onerror="this.src='https://via.placeholder.com/115x115/6a9fb5/ffffff?text=GC'">
                 <div class="speaker-info">
-                    <strong>Prof. Georgia Chalvatzaki</strong> <span class="badge-confirmed">Confirmed</span><br>
-                    <span style="font-size:0.82rem;">Professor, Technical University of Darmstadt, Germany</span><br>
-                    <a href="https://pearl-lab.com/people/georgia-chalvatzaki/" style="font-size:0.8rem;">Personal
-                        website</a>
-                    <p
-                        style="font-size: 0.78rem; color: rgba(65,64,64,0.9); margin-top: 0.3rem; line-height: 1.4; text-align: justify;">
-                        Georgia Chalvatzaki leads the PEARL Lab at TU Darmstadt. Her research lies at the intersection
-                        of robot learning, planning under uncertainty, and human-robot interaction, with a focus on
-                        structured and geometrically-grounded representations for manipulation.
+                    <div><strong>Prof. Georgia Chalvatzaki</strong> <span class="badge-confirmed">Confirmed</span></div>
+                    <div style="font-size:0.78rem; color:#444;">Professor, Technical University of Darmstadt, Germany &nbsp;|&nbsp; <a href="https://pearl-lab.com/people/georgia-chalvatzaki/">Website</a></div>
+                    <p style="font-size: 0.74rem; color: rgba(65,64,64,0.9); margin-top: 0.2rem; line-height: 1.35; text-align: justify; margin-bottom: 0;">
+                        Georgia Chalvatzaki leads the PEARL Lab at TU Darmstadt. Her research lies at the intersection of robot learning, planning under uncertainty, and structured, geometrically-grounded representations for manipulation.
                     </p>
                 </div>
             </div>
 
             <div class="speaker-row">
                 <img src="/images/speaker_sachtler.jpg" alt="Arne Sachtler" class="speaker-photo"
-                    onerror="this.src='https://via.placeholder.com/130x130/6a9fb5/ffffff?text=AS'">
+                    onerror="this.src='https://via.placeholder.com/115x115/6a9fb5/ffffff?text=AS'">
                 <div class="speaker-info">
-                    <strong>Arne Sachtler</strong> <span class="badge-confirmed">Confirmed</span><br>
-                    <span style="font-size:0.82rem;">Researcher, TU Munich – German Aerospace Center (DLR),
-                        Germany</span><br>
-                    <a href="https://www.ce.cit.tum.de/rm/people/arne-sachtler/" style="font-size:0.8rem;">Personal
-                        website</a>
-                    <p
-                        style="font-size: 0.78rem; color: rgba(65,64,64,0.9); margin-top: 0.3rem; line-height: 1.4; text-align: justify;">
-                        Arne Sachtler's research focuses on manifold-valued motor skills, Riemannian geometry for robot
-                        learning, and structure-preserving representations for manipulation, particularly in the context
-                        of bimanual and dexterous tasks.
+                    <div><strong>Arne Sachtler</strong> <span class="badge-confirmed">Confirmed</span></div>
+                    <div style="font-size:0.78rem; color:#444;">Researcher, TU Munich – German Aerospace Center (DLR), Germany &nbsp;|&nbsp; <a href="https://www.ce.cit.tum.de/rm/people/arne-sachtler/">Website</a></div>
+                    <p style="font-size: 0.74rem; color: rgba(65,64,64,0.9); margin-top: 0.2rem; line-height: 1.35; text-align: justify; margin-bottom: 0;">
+                        Arne Sachtler's research focuses on manifold-valued motor skills, Riemannian geometry for robot learning, and structure-preserving representations for manipulation in bimanual and dexterous tasks.
                     </p>
                 </div>
             </div>
 
             <div class="speaker-row">
                 <img src="/images/speaker_chamzas.jpg" alt="Constantinos Chamzas" class="speaker-photo"
-                    onerror="this.src='https://via.placeholder.com/130x130/6a9fb5/ffffff?text=CC'">
+                    onerror="this.src='https://via.placeholder.com/115x115/6a9fb5/ffffff?text=CC'">
                 <div class="speaker-info">
-                    <strong>Prof. Constantinos Chamzas</strong> <span class="badge-confirmed">Confirmed</span><br>
-                    <span style="font-size:0.82rem;">Assistant Professor, Worcester Polytechnic Institute (WPI),
-                        USA</span><br>
-                    <a href="https://www.wpi.edu/people/faculty/cchamzas" style="font-size:0.8rem;">Personal website</a>
-                    <p
-                        style="font-size: 0.78rem; color: rgba(65,64,64,0.9); margin-top: 0.3rem; line-height: 1.4; text-align: justify;">
-                        Constantinos Chamzas works on learning-guided motion planning and geometric representations for
-                        robot manipulation, with emphasis on Experience-based Planning Domains and structured latent
-                        spaces that respect geometric constraints.
+                    <div><strong>Prof. Constantinos Chamzas</strong> <span class="badge-confirmed">Confirmed</span></div>
+                    <div style="font-size:0.78rem; color:#444;">Assistant Professor, Worcester Polytechnic Institute (WPI), USA &nbsp;|&nbsp; <a href="https://www.wpi.edu/people/faculty/cchamzas">Website</a></div>
+                    <p style="font-size: 0.74rem; color: rgba(65,64,64,0.9); margin-top: 0.2rem; line-height: 1.35; text-align: justify; margin-bottom: 0;">
+                        Constantinos Chamzas works on learning-guided motion planning and geometric representations for robot manipulation, with emphasis on Experience-based Planning Domains and structured latent spaces.
                     </p>
                 </div>
             </div>
 
-            <!-- <div class="speaker-row">
-                <img src="/images/speaker_mahony.jpg" alt="Robert Mahony" class="speaker-photo"
-                    onerror="this.src='https://via.placeholder.com/130x130/6a9fb5/ffffff?text=RM'">
-                <div class="speaker-info">
-                    <strong>Prof. Robert Mahony</strong> <span class="badge-invited">Invited</span><br>
-                    <span style="font-size:0.82rem;">Professor, Australian National University (ANU),
-                        Australia</span><br>
-                    <a href="https://eng.anu.edu.au/people/robert-mahony" style="font-size:0.8rem;">Personal website</a>
-                    <p
-                        style="font-size: 0.78rem; color: rgba(65,64,64,0.9); margin-top: 0.3rem; line-height: 1.4; text-align: justify;">
-                        Robert Mahony is a world-leading expert in geometric control theory, Lie group methods for
-                        robotics, and observer design on manifolds. His work spans vision-based control, aerial
-                        robotics, and geometric mechanics for fully actuated and under-actuated systems.
-                    </p>
-                </div>
-            </div> -->
-
             <div class="speaker-row">
                 <img src="/images/speaker_JonathanKelly.jpeg" alt="Jonathan Kelly" class="speaker-photo"
-                    onerror="this.src='https://via.placeholder.com/130x130/6a9fb5/ffffff?text=JK'">
+                    onerror="this.src='https://via.placeholder.com/115x115/6a9fb5/ffffff?text=JK'">
                 <div class="speaker-info">
-                    <strong>Prof. Jonathan Kelly</strong> <span class="badge-confirmed">Confirmed</span><br>
-                    <span style="font-size:0.82rem;">Professor, University of Toronto, 
-                        Canada</span><br>
-                    <a href="https://discover.research.utoronto.ca/20331-jonathan-kelly" style="font-size:0.8rem;">Personal website</a>
-                    <p
-                        style="font-size: 0.78rem; color: rgba(65,64,64,0.9); margin-top: 0.3rem; line-height: 1.4; text-align: justify;">
-                        Jonathan Kelly leads the Space & Terrestrial Autonomous Robotic Systems (STARS) Laboratory at the University of Toronto. His research focuses on pervasive, persistent, and perceptive autonomous systems, with an emphasis on differential geometric methods in estimation and planning, robust computer vision for navigation, and collaborative mobile manipulation.
+                    <div><strong>Prof. Jonathan Kelly</strong> <span class="badge-confirmed">Confirmed</span></div>
+                    <div style="font-size:0.78rem; color:#444;">Professor, University of Toronto, Canada &nbsp;|&nbsp; <a href="https://discover.research.utoronto.ca/20331-jonathan-kelly">Website</a></div>
+                    <p style="font-size: 0.74rem; color: rgba(65,64,64,0.9); margin-top: 0.2rem; line-height: 1.35; text-align: justify; margin-bottom: 0;">
+                        Jonathan Kelly leads the STARS Laboratory at U of Toronto. His research focuses on differential geometric methods in estimation and planning, robust computer vision, and collaborative mobile manipulation.
                     </p>
                 </div>
             </div>
 
             <div class="speaker-row">
                 <img src="/images/speaker_KaterinaFragkiadaki.png" alt="Katerina Fragkiadaki" class="speaker-photo"
-                    onerror="this.src='https://via.placeholder.com/130x130/6a9fb5/ffffff?text=KF'">
+                    onerror="this.src='https://via.placeholder.com/115x115/6a9fb5/ffffff?text=KF'">
                 <div class="speaker-info">
-                    <strong>Prof. Katerina Fragkiadaki </strong> <span class="badge-confirmed">Confirmed</span><br>
-                    <span style="font-size:0.82rem;">JPMorgan Chase Associate Professor, Carnegie Mellon University, 
-                        USA</span><br>
-                    <a href="https://www.cs.cmu.edu/~katef/" style="font-size:0.8rem;">Personal website</a>
-                    <p
-                        style="font-size: 0.78rem; color: rgba(65,64,64,0.9); margin-top: 0.3rem; line-height: 1.4; text-align: justify;">
-                        Katerina Fragkiadaki's research lies at the intersection of computer vision, machine learning, language understanding, and robotics. Her work focuses on building intelligent embodied agents that acquire predictive world models to reason through physical dynamics and interactions, with an emphasis on representation learning, video understanding, 2D/3D vision-language models, and sim2real robot learning.
+                    <div><strong>Prof. Katerina Fragkiadaki</strong> <span class="badge-confirmed">Confirmed</span></div>
+                    <div style="font-size:0.78rem; color:#444;">Associate Professor, Carnegie Mellon University (CMU), USA &nbsp;|&nbsp; <a href="https://www.cs.cmu.edu/~katef/">Website</a></div>
+                    <p style="font-size: 0.74rem; color: rgba(65,64,64,0.9); margin-top: 0.2rem; line-height: 1.35; text-align: justify; margin-bottom: 0;">
+                        Katerina Fragkiadaki's research lies at the intersection of computer vision, machine learning, and robotics, focusing on predictive world models to reason through physical dynamics and sim2real robot learning.
                     </p>
                 </div>
             </div>
 
             <div class="speaker-row">
                 <img src="/images/speaker_lachner.jpg" alt="Johannes Lachner" class="speaker-photo"
-                    onerror="this.src='https://via.placeholder.com/130x130/6a9fb5/ffffff?text=JL'">
+                    onerror="this.src='https://via.placeholder.com/115x115/6a9fb5/ffffff?text=JL'">
                 <div class="speaker-info">
-                    <strong>Dr. Johannes Lachner</strong> <span class="badge-confirmed">Confirmed</span><br>
-                    <span style="font-size:0.82rem;">Assistant Professor, Elmore Family School of Electrical and Computer Engineering<br>
-                        Courtesy Appointment, School of Mechanical Engineering<br>
-                        Purdue University, USA</span><br>
-                    <a href="https://jlachner.github.io/" style="font-size:0.8rem;">Personal website</a>
-                    <p
-                        style="font-size: 0.78rem; color: rgba(65,64,64,0.9); margin-top: 0.3rem; line-height: 1.4; text-align: justify;">
-                        Johannes Lachner's research focuses on geometric methods for robot control and manipulation,
-                        including task-space control on Lie groups, geometric fabrics, and structured optimization for
-                        compliant physical interaction.
+                    <div><strong>Dr. Johannes Lachner</strong> <span class="badge-confirmed">Confirmed</span></div>
+                    <div style="font-size:0.78rem; color:#444;">Assistant Professor, ECE &amp; ME, Purdue University, USA &nbsp;|&nbsp; <a href="https://jlachner.github.io/">Website</a></div>
+                    <p style="font-size: 0.74rem; color: rgba(65,64,64,0.9); margin-top: 0.2rem; line-height: 1.35; text-align: justify; margin-bottom: 0;">
+                        Johannes Lachner's research focuses on geometric methods for robot control and manipulation, including task-space control on Lie groups, geometric fabrics, and structured optimization.
                     </p>
                 </div>
             </div>
 
-
-           <div class="speaker-row">
+            <div class="speaker-row">
                 <img src="/images/org_loew.png" alt="Tobias Löw" class="speaker-photo"
-                    onerror="this.src='https://via.placeholder.com/130x130/6a9fb5/ffffff?text=TL'">
+                    onerror="this.src='https://via.placeholder.com/115x115/6a9fb5/ffffff?text=TL'">
                 <div class="speaker-info">
-                    <strong>Dr. Tobias Löw</strong> <span class="badge-confirmed">Confirmed</span><br>
-                    <span style="font-size:0.82rem;">Postdoctoral Researcher, University of Washington,
-                        USA</span><br>
-                    <a href="https://www.tobiloew.ch/" style="font-size:0.8rem;">Personal website</a>
-                    <p
-                        style="font-size: 0.78rem; color: rgba(65,64,64,0.9); margin-top: 0.3rem; line-height: 1.4; text-align: justify;">
-                        Tobias Löw is a postdoctoral scholar advised by Prof. Siddhartha Srinivasa at the Personal Robotics Lab at the University of Washington. His research focuses on geometric representations for robotics, with the goal of enabling robots to better perceive, interact with, and adapt to complex human-centered environments. His work explores how geometry can support efficient computation, safe interaction, and scalable generalization across robotic tasks.
+                    <div><strong>Tobias Löw</strong> <span class="badge-confirmed">Confirmed</span></div>
+                    <div style="font-size:0.78rem; color:#444;">Postdoctoral Researcher, University of Washington, Canada &nbsp;|&nbsp; <a href="https://www.tobiloew.ch/">Website</a></div>
+                    <p style="font-size: 0.74rem; color: rgba(65,64,64,0.9); margin-top: 0.2rem; line-height: 1.35; text-align: justify; margin-bottom: 0;">
+                        Tobias Löw's research focuses on geometric methods and learning for robotic manipulation and motion generation, with application to complex constrained environments.
                     </p>
                 </div>
             </div>
 
         </div>
-    </div>    
+    </div>
 
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <div style="margin-top: 3rem; padding: 2rem 0; border-top: 2px solid #ddd;">
+        <div class="container" style="text-align: center;">
+            <p style="color:#888; font-size:0.8rem;">IEEE/RSJ IROS 2026 Workshop — Geometric Representations in Robotics
+            </p>
+        </div>
+    </div>
 
     <script src='/public/js/script.js'></script>
 </body>
