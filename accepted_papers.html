@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Accepted Papers - IEEE/RSJ IROS WS - Geometric Representations in Robotics</title>
+    <meta name="description"
+        content="Accepted papers for the 2nd Workshop on Geometric-Aware Representations for Manipulation at IROS 2026.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/public/css/poole.css">
+    <link rel="stylesheet" href="/public/css/lanyon.css">
+    <link rel="stylesheet" href="/public/css/syntax.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        .container.content {
+            padding-bottom: 1rem !important;
+            margin-bottom: 1rem !important;
+        }
+
+        .wrap {
+            margin-bottom: 1rem;
+        }
+
+        body {
+            margin-bottom: 1rem;
+        }
+
+        .container.content p,
+        .container.content li {
+            text-align: justify;
+        }
+
+        .paper-row {
+            margin-bottom: 1.25rem;
+            padding: 1.1rem 1.25rem;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            box-sizing: border-box;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+        }
+
+        .paper-row.even {
+            flex-direction: row-reverse;
+            background: linear-gradient(135deg, transparent 0%, rgba(42, 100, 150, 0.04) 50%, rgba(42, 100, 150, 0.10) 100%);
+        }
+
+        .paper-row.odd {
+            flex-direction: row;
+            background: linear-gradient(135deg, rgba(42, 100, 150, 0.10) 0%, rgba(42, 100, 150, 0.04) 50%, transparent 100%);
+        }
+
+        .paper-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .paper-title {
+            margin: 0 0 0.35rem 0;
+            font-size: 1.05rem;
+            line-height: 1.4;
+            color: #111;
+        }
+
+        .paper-meta {
+            margin: 0 0 0.25rem 0;
+            font-size: 0.9rem;
+            color: #444;
+        }
+
+        .paper-meta.institution {
+            color: #666;
+            font-size: 0.86rem;
+        }
+
+        .paper-teaser {
+            flex-shrink: 0;
+            width: 250px;
+            max-width: 38%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .paper-teaser img {
+            max-width: 100%;
+            max-height: 160px;
+            object-fit: contain;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+            border: 1px solid #dcdcdc;
+            background: #fff;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .paper-teaser img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+        }
+
+        .btn-download {
+            display: inline-block;
+            margin-top: 0.5rem;
+            padding: 0.35rem 0.85rem;
+            background-color: #2a6496;
+            color: #ffffff !important;
+            font-size: 0.82rem;
+            font-weight: bold;
+            font-family: "PT Sans", sans-serif;
+            border-radius: 4px;
+            text-decoration: none !important;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-download:hover {
+            background-color: #1d486c;
+            color: #ffffff !important;
+            text-decoration: none !important;
+        }
+
+        @media (max-width: 640px) {
+            .paper-row, .paper-row.even, .paper-row.odd {
+                flex-direction: column !important;
+                align-items: flex-start;
+            }
+            .paper-teaser {
+                width: 100%;
+                max-width: 100%;
+                margin-top: 0.75rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="theme-base-0d sidebar-overlay">
+    <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-item">
+            <p style="font-size: 1.1rem; line-height: 1.4;">
+                <strong style="font-size: 1.4rem;">IROS 2026 WS</strong><br>
+                <strong style="font-size: 1.15rem; color: rgb(173, 210, 230);">Geometric Representations<br>in
+                    Robotics</strong>
+            </p>
+        </div>
+        <nav class="sidebar-nav">
+            <a class="sidebar-nav-item" href="/" style="font-weight: bold;">Home</a>
+            <a class="sidebar-nav-item" href="/program.html" style="font-weight: bold;">Program</a>
+            <a class="sidebar-nav-item" href="/speakers.html" style="font-weight: bold;">Invited Speakers</a>
+            <a class="sidebar-nav-item active" href="/accepted_papers.html" style="font-weight: bold;">Accepted Papers</a>
+            <a class="sidebar-nav-item" href="/cfp.html" style="font-weight: bold;">Call for Papers</a>
+            <a class="sidebar-nav-item" href="/submission.html" style="font-weight: bold;">Submit Paper</a>
+            <a class="sidebar-nav-item" href="/organizers.html" style="font-weight: bold;">Organizers</a>
+        </nav>
+    </div>
+
+    <div class="wrap">
+        <div class="masthead">
+            <div class="container" style="display: flex; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 0 0 auto;">
+                    <a href="/"><img src="/images/logo.png" alt="Workshop Logo"
+                            style="height: 95px; max-width: 100%;"></a>
+                </div>
+                <div style="flex: 1; min-width: 200px; padding-left: 0.5rem;">
+                    <h3 class="masthead-title" style="margin: 0;">
+                        <a href="/" title="Home" style="font-size: 1.5rem;">IEEE/RSJ IROS WS — Geometric Representations
+                            in Robotics</a><br>
+                        <small style="font-size: 1.0rem; color: #555;">Structured priors, metrics, constraints &amp;
+                            groundings for Manipulation</small>
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="container content">
+
+            <h1>Accepted Papers</h1>
+            <hr class="section-divider">
+
+            <p>Below is the list of accepted contributions for the 2nd Workshop on Geometric-Aware Representations for Manipulation at IROS 2026. Click on <strong>Download Paper (PDF)</strong> to view or download the camera-ready papers.</p>
+
+            <div class="paper-list" style="margin-top: 1.5rem;">
+
+                <!-- Paper #01 -->
+                <div class="paper-row odd">
+                    <div class="paper-info">
+                        <p class="paper-title"><strong>Paper #01 — Geometric–Topological Representations for Self-Reconfiguration Planning of Continuum Modular Robots</strong></p>
+                        <p class="paper-meta">Authors: Zhefeng Huang, Yilin Cai, Yifan Wang, Yue Chen</p>
+                        <p class="paper-meta institution">Institutions: Georgia Institute of Technology; Emory University</p>
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/01_Geometric-Topological_Self-Reconfiguration/01_Geometric-Topological_Self-Reconfiguration__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
+                    </div>
+                    <div class="paper-teaser">
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/01_Geometric-Topological_Self-Reconfiguration/01_Geometric-Topological_Self-Reconfiguration__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
+                            <img src="/IROS2026_Accepted_Papers_and_Teasers/01_Geometric-Topological_Self-Reconfiguration/01_Geometric-Topological_Self-Reconfiguration__teaser.png" alt="Paper #01 Teaser">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Paper #02 -->
+                <div class="paper-row even">
+                    <div class="paper-info">
+                        <p class="paper-title"><strong>Paper #02 — Aggregate Pose Accuracy Is Not Invariance: Worst-Case-Over-Orbit Auditing for Robot Perception</strong></p>
+                        <p class="paper-meta">Author: Ali Baheri</p>
+                        <p class="paper-meta institution">Institution: Rochester Institute of Technology</p>
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/02_Aggregate_Pose_Accuracy_Is_Not_Invariance/02_Aggregate_Pose_Accuracy_Is_Not_Invariance__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
+                    </div>
+                    <div class="paper-teaser">
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/02_Aggregate_Pose_Accuracy_Is_Not_Invariance/02_Aggregate_Pose_Accuracy_Is_Not_Invariance__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
+                            <img src="/IROS2026_Accepted_Papers_and_Teasers/02_Aggregate_Pose_Accuracy_Is_Not_Invariance/02_Aggregate_Pose_Accuracy_Is_Not_Invariance__teaser.png" alt="Paper #02 Teaser">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Paper #03 -->
+                <div class="paper-row odd">
+                    <div class="paper-info">
+                        <p class="paper-title"><strong>Paper #03 — Action-Contract Grouping for B-rep Connector Poses: Separating Geometric Symmetry from Local Assembly Action Equivalence</strong></p>
+                        <p class="paper-meta">Authors: Nathan Espley-Plumb, Windo Hutabarat, Jonathan Aitken, Ashutosh Tiwari</p>
+                        <p class="paper-meta institution">Institution: The University of Sheffield</p>
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/03_Action-Contract_Grouping_B-rep_Connector_Poses/03_Action-Contract_Grouping_B-rep_Connector_Poses__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
+                    </div>
+                    <div class="paper-teaser">
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/03_Action-Contract_Grouping_B-rep_Connector_Poses/03_Action-Contract_Grouping_B-rep_Connector_Poses__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
+                            <img src="/IROS2026_Accepted_Papers_and_Teasers/03_Action-Contract_Grouping_B-rep_Connector_Poses/03_Action-Contract_Grouping_B-rep_Connector_Poses__teaser.png" alt="Paper #03 Teaser">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Paper #04 -->
+                <div class="paper-row even">
+                    <div class="paper-info">
+                        <p class="paper-title"><strong>Paper #04 — Contact-Topology Manifolds in a Combined Finger–Object State Space: A Geometric Representation for Active-Surface In-Hand Manipulation</strong></p>
+                        <p class="paper-meta">Authors: Shambhuraj A. Mane, Andrew S. Morgan, Berk Calli</p>
+                        <p class="paper-meta institution">Institutions: Worcester Polytechnic Institute; RAI Institute</p>
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/04_Contact-Topology_Manifolds_Finger-Object/04_Contact-Topology_Manifolds_Finger-Object__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
+                    </div>
+                    <div class="paper-teaser">
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/04_Contact-Topology_Manifolds_Finger-Object/04_Contact-Topology_Manifolds_Finger-Object__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
+                            <img src="/IROS2026_Accepted_Papers_and_Teasers/04_Contact-Topology_Manifolds_Finger-Object/04_Contact-Topology_Manifolds_Finger-Object__teaser.jpg" alt="Paper #04 Teaser">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Paper #05 -->
+                <div class="paper-row odd">
+                    <div class="paper-info">
+                        <p class="paper-title"><strong>Paper #05 — Robust Local Collision Avoidance via Stochastic Vector Field Inequalities</strong></p>
+                        <p class="paper-meta">Authors: Joshua R. Bettles, Yang Song, Bruno Vilhena Adorno, Joaquin Carrasco</p>
+                        <p class="paper-meta institution">Institution: The University of Manchester</p>
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/05_Robust_Local_Collision_Avoidance_SVFI/05_Robust_Local_Collision_Avoidance_SVFI__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
+                    </div>
+                    <div class="paper-teaser">
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/05_Robust_Local_Collision_Avoidance_SVFI/05_Robust_Local_Collision_Avoidance_SVFI__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
+                            <img src="/IROS2026_Accepted_Papers_and_Teasers/05_Robust_Local_Collision_Avoidance_SVFI/05_Robust_Local_Collision_Avoidance_SVFI__teaser.png" alt="Paper #05 Teaser">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Paper #06 -->
+                <div class="paper-row even">
+                    <div class="paper-info">
+                        <p class="paper-title"><strong>Paper #06 — Contact Modes Are Strata: What Geometric Structure Buys in Discrete–Continuous Planning</strong></p>
+                        <p class="paper-meta">Authors: Phone Thiha Kyaw, Jonathan Kelly</p>
+                        <p class="paper-meta institution">Institution: University of Toronto Institute for Aerospace Studies (UTIAS)</p>
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/06_Contact_Modes_Are_Strata/06_Contact_Modes_Are_Strata__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
+                    </div>
+                    <div class="paper-teaser">
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/06_Contact_Modes_Are_Strata/06_Contact_Modes_Are_Strata__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
+                            <img src="/IROS2026_Accepted_Papers_and_Teasers/06_Contact_Modes_Are_Strata/06_Contact_Modes_Are_Strata__teaser.png" alt="Paper #06 Teaser">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Paper #07 -->
+                <div class="paper-row odd">
+                    <div class="paper-info">
+                        <p class="paper-title"><strong>Paper #07 — AdaDexGrasp: Adaptive Dexterous Grasping via 3D Visuo-Tactile Representation Fusion</strong></p>
+                        <p class="paper-meta">Authors: Xirui Liang, Jingkai Xu, Jiaqi Liang, Yuran Wang, Ruochong Li, Yuanpei Chen, Masayoshi Tomizuka, Wei Zhan, Ruihai Wu</p>
+                        <p class="paper-meta institution">Institutions: University of California, Berkeley; Peking University; The Hong Kong University of Science and Technology</p>
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/07_AdaDexGrasp/07_AdaDexGrasp__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
+                    </div>
+                    <div class="paper-teaser">
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/07_AdaDexGrasp/07_AdaDexGrasp__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
+                            <img src="/IROS2026_Accepted_Papers_and_Teasers/07_AdaDexGrasp/07_AdaDexGrasp__teaser.png" alt="Paper #07 Teaser">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Paper #08 -->
+                <div class="paper-row even">
+                    <div class="paper-info">
+                        <p class="paper-title"><strong>Paper #08 — Beyond Fingertips: From Palm Priors to Tactile Refinement for Generalizable Dexterous Grasping</strong></p>
+                        <p class="paper-meta">Authors: Zhen Yuan, Ruoxiang Huang, Junchun Yu, Yuran Wang, Guanqi He, Masayoshi Tomizuka, Wei Zhan, Ruihai Wu</p>
+                        <p class="paper-meta institution">Institutions: University of California, Berkeley; University of Hong Kong; Peking University; City University of Hong Kong; Carnegie Mellon University</p>
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/08_Beyond_Fingertips/08_Beyond_Fingertips__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
+                    </div>
+                    <div class="paper-teaser">
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/08_Beyond_Fingertips/08_Beyond_Fingertips__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
+                            <img src="/IROS2026_Accepted_Papers_and_Teasers/08_Beyond_Fingertips/08_Beyond_Fingertips__teaser.png" alt="Paper #08 Teaser">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Paper #09 -->
+                <div class="paper-row odd">
+                    <div class="paper-info">
+                        <p class="paper-title"><strong>Paper #09 — Rotation-Aware Point-Cloud Embeddings for Vision-Based In-Hand Reorientation</strong></p>
+                        <p class="paper-meta">Authors: Yashom Dighe, Karthik Dantu</p>
+                        <p class="paper-meta institution">Institution: University at Buffalo</p>
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/09_Rotation-Aware_Point-Cloud_Embeddings/09_Rotation-Aware_Point-Cloud_Embeddings__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
+                    </div>
+                    <div class="paper-teaser">
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/09_Rotation-Aware_Point-Cloud_Embeddings/09_Rotation-Aware_Point-Cloud_Embeddings__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
+                            <img src="/IROS2026_Accepted_Papers_and_Teasers/09_Rotation-Aware_Point-Cloud_Embeddings/09_Rotation-Aware_Point-Cloud_Embeddings__teaser.png" alt="Paper #09 Teaser">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Paper #10 -->
+                <div class="paper-row even">
+                    <div class="paper-info">
+                        <p class="paper-title"><strong>Paper #10 — Reduction of Tracking Control Problems under Weak Symmetry</strong></p>
+                        <p class="paper-meta">Authors: Riley Link, Pieter van Goor, Jake Welde</p>
+                        <p class="paper-meta institution">Institutions: Cornell University; University of Sydney</p>
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/10_Reduction_Tracking_Control_Weak_Symmetry/10_Reduction_Tracking_Control_Weak_Symmetry__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
+                    </div>
+                    <div class="paper-teaser">
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/10_Reduction_Tracking_Control_Weak_Symmetry/10_Reduction_Tracking_Control_Weak_Symmetry__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
+                            <img src="/IROS2026_Accepted_Papers_and_Teasers/10_Reduction_Tracking_Control_Weak_Symmetry/10_Reduction_Tracking_Control_Weak_Symmetry__teaser.png" alt="Paper #10 Teaser">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Paper #11 -->
+                <div class="paper-row odd">
+                    <div class="paper-info">
+                        <p class="paper-title"><strong>Paper #11 — Learning Deformable Cable Geometry for Collision-Free Planning of Construction Robots</strong></p>
+                        <p class="paper-meta">Authors: Karthik Shaji, Edvard Bruun, Frank Dellaert</p>
+                        <p class="paper-meta institution">Institution: Georgia Institute of Technology</p>
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/11_Learning_Deformable_Cable_Geometry/11_Learning_Deformable_Cable_Geometry__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
+                    </div>
+                    <div class="paper-teaser">
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/11_Learning_Deformable_Cable_Geometry/11_Learning_Deformable_Cable_Geometry__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
+                            <img src="/IROS2026_Accepted_Papers_and_Teasers/11_Learning_Deformable_Cable_Geometry/11_Learning_Deformable_Cable_Geometry__teaser.png" alt="Paper #11 Teaser">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Paper #12 -->
+                <div class="paper-row even">
+                    <div class="paper-info">
+                        <p class="paper-title"><strong>Paper #12 — Calibrating Motion Uncertainty on Contact-Stratified Configuration Spaces</strong></p>
+                        <p class="paper-meta">Authors: Luís Marques, Kristian Popov, Dmitry Berenson</p>
+                        <p class="paper-meta institution">Institution: University of Michigan</p>
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/12_Calibrating_Motion_Uncertainty_Contact-Stratified/12_Calibrating_Motion_Uncertainty_Contact-Stratified__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
+                    </div>
+                    <div class="paper-teaser">
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/12_Calibrating_Motion_Uncertainty_Contact-Stratified/12_Calibrating_Motion_Uncertainty_Contact-Stratified__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
+                            <img src="/IROS2026_Accepted_Papers_and_Teasers/12_Calibrating_Motion_Uncertainty_Contact-Stratified/12_Calibrating_Motion_Uncertainty_Contact-Stratified__teaser.png" alt="Paper #12 Teaser">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Paper #13 -->
+                <div class="paper-row odd">
+                    <div class="paper-info">
+                        <p class="paper-title"><strong>Paper #13 — Riemannian Splat Regression Models for Learning Time Fields on Arbitrary Riemannian Manifolds</strong></p>
+                        <p class="paper-meta">Authors: Anastasios Manganaris, Rohit Banerjee, Gokul Prabhakaran, Ahmed H. Qureshi</p>
+                        <p class="paper-meta institution">Institution: Purdue University</p>
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/13_Riemannian_Splat_Regression/13_Riemannian_Splat_Regression__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
+                    </div>
+                    <div class="paper-teaser">
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/13_Riemannian_Splat_Regression/13_Riemannian_Splat_Regression__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
+                            <img src="/IROS2026_Accepted_Papers_and_Teasers/13_Riemannian_Splat_Regression/13_Riemannian_Splat_Regression__teaser.png" alt="Paper #13 Teaser">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Paper #14 -->
+                <div class="paper-row even">
+                    <div class="paper-info">
+                        <p class="paper-title"><strong>Paper #14 — Phase-Varying Neural Potential Functions for Reactive Robot Motions</strong></p>
+                        <p class="paper-meta">Authors: Ahmet Tekden, Dimitrios Kanoulas, Aude Billard, Yasemin Bekiroglu</p>
+                        <p class="paper-meta institution">Institutions: Chalmers University of Technology; University College London; École Polytechnique Fédérale de Lausanne (EPFL)</p>
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/14_Phase-Varying_Neural_Potential_Functions/14_Phase-Varying_Neural_Potential_Functions__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
+                    </div>
+                    <div class="paper-teaser">
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/14_Phase-Varying_Neural_Potential_Functions/14_Phase-Varying_Neural_Potential_Functions__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
+                            <img src="/IROS2026_Accepted_Papers_and_Teasers/14_Phase-Varying_Neural_Potential_Functions/14_Phase-Varying_Neural_Potential_Functions__teaser.png" alt="Paper #14 Teaser">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Paper #15 -->
+                <div class="paper-row odd">
+                    <div class="paper-info">
+                        <p class="paper-title"><strong>Paper #15 — Compositional Scene-Motion Learning via Object-Centric Neural Representations</strong></p>
+                        <p class="paper-meta">Authors: Ahmet Tekden, Yasemin Bekiroglu</p>
+                        <p class="paper-meta institution">Institutions: Chalmers University of Technology; University College London</p>
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/15_Compositional_Scene-Motion_Learning/15_Compositional_Scene-Motion_Learning__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
+                    </div>
+                    <div class="paper-teaser">
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/15_Compositional_Scene-Motion_Learning/15_Compositional_Scene-Motion_Learning__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
+                            <img src="/IROS2026_Accepted_Papers_and_Teasers/15_Compositional_Scene-Motion_Learning/15_Compositional_Scene-Motion_Learning__teaser.png" alt="Paper #15 Teaser">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Paper #16 -->
+                <div class="paper-row even">
+                    <div class="paper-info">
+                        <p class="paper-title"><strong>Paper #16 — Equivariance Begins at the Source: Quantifying and Characterizing Source Distributions for Generative Robot Policies</strong></p>
+                        <p class="paper-meta">Authors: Keqin Wang, Tao Zhong, Christine Allen-Blanchette</p>
+                        <p class="paper-meta institution">Institution: Princeton University</p>
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/16_Equivariance_Begins_at_the_Source/16_Equivariance_Begins_at_the_Source__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
+                    </div>
+                    <div class="paper-teaser">
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/16_Equivariance_Begins_at_the_Source/16_Equivariance_Begins_at_the_Source__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
+                            <img src="/IROS2026_Accepted_Papers_and_Teasers/16_Equivariance_Begins_at_the_Source/16_Equivariance_Begins_at_the_Source__teaser.png" alt="Paper #16 Teaser">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Paper #17 -->
+                <div class="paper-row odd">
+                    <div class="paper-info">
+                        <p class="paper-title"><strong>Paper #17 — Shades of Success: Characterizing Manipulation Quality through Object-Centric Constraints</strong></p>
+                        <p class="paper-meta">Authors: Lorena Maria Genua, Sarvesh Prajapati, Ananya Trivedi, Taşkın Padır</p>
+                        <p class="paper-meta institution">Institution: Northeastern University</p>
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/17_Shades_of_Success/17_Shades_of_Success__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
+                    </div>
+                    <div class="paper-teaser">
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/17_Shades_of_Success/17_Shades_of_Success__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
+                            <img src="/IROS2026_Accepted_Papers_and_Teasers/17_Shades_of_Success/17_Shades_of_Success__teaser.png" alt="Paper #17 Teaser">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Paper #18 -->
+                <div class="paper-row even">
+                    <div class="paper-info">
+                        <p class="paper-title"><strong>Paper #18 — Robust In-Hand Manipulation via Priors from Grasp Quality and Contact Geometry</strong></p>
+                        <p class="paper-meta">Authors: Shihan Lu, Yifei Chen, Ed Colgate, Kevin Lynch</p>
+                        <p class="paper-meta institution">Institution: Northwestern University</p>
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/18_Robust_In-Hand_Manipulation_Priors/18_Robust_In-Hand_Manipulation_Priors__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
+                    </div>
+                    <div class="paper-teaser">
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/18_Robust_In-Hand_Manipulation_Priors/18_Robust_In-Hand_Manipulation_Priors__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
+                            <img src="/IROS2026_Accepted_Papers_and_Teasers/18_Robust_In-Hand_Manipulation_Priors/18_Robust_In-Hand_Manipulation_Priors__teaser.png" alt="Paper #18 Teaser">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Paper #19 -->
+                <div class="paper-row odd">
+                    <div class="paper-info">
+                        <p class="paper-title"><strong>Paper #19 — From Swept Contact to Pose: Probe-Aware Registration via Complementary-Shape Docking</strong></p>
+                        <p class="paper-meta">Authors: Chen Chen, Yunwen Li, Yifan Xu, Xiangjie Yan, Chang Shu, Jianxia Hou, Shiji Song, Xiang Li</p>
+                        <p class="paper-meta institution">Institutions: Tsinghua University; Tsingscribe Medical Ltd.; ETH Zurich; Peking University School and Hospital of Stomatology</p>
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/19_From_Swept_Contact_to_Pose/19_From_Swept_Contact_to_Pose__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
+                    </div>
+                    <div class="paper-teaser">
+                        <a href="/IROS2026_Accepted_Papers_and_Teasers/19_From_Swept_Contact_to_Pose/19_From_Swept_Contact_to_Pose__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
+                            <img src="/IROS2026_Accepted_Papers_and_Teasers/19_From_Swept_Contact_to_Pose/19_From_Swept_Contact_to_Pose__teaser.jpg" alt="Paper #19 Teaser">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Paper #20 -->
+                <div class="paper-row even">
+                    <div class="paper-info">
+                        <p class="paper-title"><strong>Paper #20 — When the Prior Becomes the Measurement: Learning-Augmented Equivariant Filtering for Unaided Inertial Navigation</strong></p>
+                        <p class="paper-meta">Authors: Aya Lafdili, Blaise Mulliez, Hélène Tap</p>
+                        <p class="paper-meta institution">Institution: LAAS-CNRS / Toulouse INP-ENSEEIHT, France</p>
+                    </div>
+                </div>
+
+                <!-- Paper #21 -->
+                <div class="paper-row odd">
+                    <div class="paper-info">
+                        <p class="paper-title"><strong>Paper #21 — GRIP: Sparse Geometric Interaction Graphs for Contact-Rich Manipulation</strong></p>
+                        <p class="paper-meta">Authors: Charuvahan Adhivarahan, Sai Ram Kasanagottu, Dasharadhan Mahalingam, Nilanjan Chakraborty, Karthik Dantu</p>
+                        <p class="paper-meta institution">Institutions: University at Buffalo; Stony Brook University</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <div style="margin-top: 3rem; padding: 2rem 0; border-top: 2px solid #ddd;">
+        <div class="container" style="text-align: center;">
+            <p style="color:#888; font-size:0.8rem;">IEEE/RSJ IROS 2026 Workshop — Geometric Representations in Robotics
+            </p>
+        </div>
+    </div>
+
+    <script src='/public/js/script.js'></script>
+</body>
+
+</html>
