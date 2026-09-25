@@ -95,12 +95,13 @@
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
             border: 1px solid #dcdcdc;
             background: #fff;
+            cursor: pointer;
             transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
         .paper-teaser img:hover {
-            transform: scale(1.02);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+            transform: scale(1.03);
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
         }
 
         .btn-download {
@@ -122,6 +123,54 @@
             background-color: #1d486c;
             color: #ffffff !important;
             text-decoration: none !important;
+        }
+
+        /* Lightbox Modal for Enlarged Figures */
+        .lightbox-modal {
+            display: none;
+            position: fixed;
+            z-index: 10000;
+            padding: 20px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            background-color: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(5px);
+        }
+
+        .lightbox-modal-content {
+            margin: auto;
+            display: block;
+            max-width: 92%;
+            max-height: 88vh;
+            object-fit: contain;
+            border-radius: 6px;
+            box-shadow: 0 4px 25px rgba(0,0,0,0.6);
+            animation: zoomIn 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0.92); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: #ffffff;
+            font-size: 38px;
+            font-weight: bold;
+            cursor: pointer;
+            line-height: 1;
+            user-select: none;
+            transition: color 0.2s ease;
+        }
+
+        .lightbox-close:hover {
+            color: #6a9fb5;
         }
 
         @media (max-width: 640px) {
@@ -183,7 +232,7 @@
             <h1>Accepted Papers</h1>
             <hr class="section-divider">
 
-            <p>Below is the list of accepted contributions for the 2nd Workshop on Geometric-Aware Representations for Manipulation at IROS 2026. Click on <strong>Download Paper (PDF)</strong> to view or download the camera-ready papers.</p>
+            <p>Below is the list of accepted contributions for the 2nd Workshop on Geometric-Aware Representations for Manipulation at IROS 2026. Click on any teaser figure to enlarge it, or click <strong>Download Paper (PDF)</strong> to view the full camera-ready paper.</p>
 
             <div class="paper-list" style="margin-top: 1.5rem;">
 
@@ -196,9 +245,7 @@
                         <a href="/IROS2026_Accepted_Papers_and_Teasers/01_Geometric-Topological_Self-Reconfiguration/01_Geometric-Topological_Self-Reconfiguration__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
                     </div>
                     <div class="paper-teaser">
-                        <a href="/IROS2026_Accepted_Papers_and_Teasers/01_Geometric-Topological_Self-Reconfiguration/01_Geometric-Topological_Self-Reconfiguration__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
-                            <img src="/IROS2026_Accepted_Papers_and_Teasers/01_Geometric-Topological_Self-Reconfiguration/01_Geometric-Topological_Self-Reconfiguration__teaser.png" alt="Paper #01 Teaser">
-                        </a>
+                        <img src="/IROS2026_Accepted_Papers_and_Teasers/01_Geometric-Topological_Self-Reconfiguration/01_Geometric-Topological_Self-Reconfiguration__teaser.png" alt="Paper #01 Teaser Figure" onclick="openLightbox(this)" title="Click to enlarge image">
                     </div>
                 </div>
 
@@ -211,9 +258,7 @@
                         <a href="/IROS2026_Accepted_Papers_and_Teasers/02_Aggregate_Pose_Accuracy_Is_Not_Invariance/02_Aggregate_Pose_Accuracy_Is_Not_Invariance__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
                     </div>
                     <div class="paper-teaser">
-                        <a href="/IROS2026_Accepted_Papers_and_Teasers/02_Aggregate_Pose_Accuracy_Is_Not_Invariance/02_Aggregate_Pose_Accuracy_Is_Not_Invariance__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
-                            <img src="/IROS2026_Accepted_Papers_and_Teasers/02_Aggregate_Pose_Accuracy_Is_Not_Invariance/02_Aggregate_Pose_Accuracy_Is_Not_Invariance__teaser.png" alt="Paper #02 Teaser">
-                        </a>
+                        <img src="/IROS2026_Accepted_Papers_and_Teasers/02_Aggregate_Pose_Accuracy_Is_Not_Invariance/02_Aggregate_Pose_Accuracy_Is_Not_Invariance__teaser.png" alt="Paper #02 Teaser Figure" onclick="openLightbox(this)" title="Click to enlarge image">
                     </div>
                 </div>
 
@@ -226,9 +271,7 @@
                         <a href="/IROS2026_Accepted_Papers_and_Teasers/03_Action-Contract_Grouping_B-rep_Connector_Poses/03_Action-Contract_Grouping_B-rep_Connector_Poses__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
                     </div>
                     <div class="paper-teaser">
-                        <a href="/IROS2026_Accepted_Papers_and_Teasers/03_Action-Contract_Grouping_B-rep_Connector_Poses/03_Action-Contract_Grouping_B-rep_Connector_Poses__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
-                            <img src="/IROS2026_Accepted_Papers_and_Teasers/03_Action-Contract_Grouping_B-rep_Connector_Poses/03_Action-Contract_Grouping_B-rep_Connector_Poses__teaser.png" alt="Paper #03 Teaser">
-                        </a>
+                        <img src="/IROS2026_Accepted_Papers_and_Teasers/03_Action-Contract_Grouping_B-rep_Connector_Poses/03_Action-Contract_Grouping_B-rep_Connector_Poses__teaser.png" alt="Paper #03 Teaser Figure" onclick="openLightbox(this)" title="Click to enlarge image">
                     </div>
                 </div>
 
@@ -241,9 +284,7 @@
                         <a href="/IROS2026_Accepted_Papers_and_Teasers/04_Contact-Topology_Manifolds_Finger-Object/04_Contact-Topology_Manifolds_Finger-Object__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
                     </div>
                     <div class="paper-teaser">
-                        <a href="/IROS2026_Accepted_Papers_and_Teasers/04_Contact-Topology_Manifolds_Finger-Object/04_Contact-Topology_Manifolds_Finger-Object__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
-                            <img src="/IROS2026_Accepted_Papers_and_Teasers/04_Contact-Topology_Manifolds_Finger-Object/04_Contact-Topology_Manifolds_Finger-Object__teaser.jpg" alt="Paper #04 Teaser">
-                        </a>
+                        <img src="/IROS2026_Accepted_Papers_and_Teasers/04_Contact-Topology_Manifolds_Finger-Object/04_Contact-Topology_Manifolds_Finger-Object__teaser.jpg" alt="Paper #04 Teaser Figure" onclick="openLightbox(this)" title="Click to enlarge image">
                     </div>
                 </div>
 
@@ -256,9 +297,7 @@
                         <a href="/IROS2026_Accepted_Papers_and_Teasers/05_Robust_Local_Collision_Avoidance_SVFI/05_Robust_Local_Collision_Avoidance_SVFI__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
                     </div>
                     <div class="paper-teaser">
-                        <a href="/IROS2026_Accepted_Papers_and_Teasers/05_Robust_Local_Collision_Avoidance_SVFI/05_Robust_Local_Collision_Avoidance_SVFI__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
-                            <img src="/IROS2026_Accepted_Papers_and_Teasers/05_Robust_Local_Collision_Avoidance_SVFI/05_Robust_Local_Collision_Avoidance_SVFI__teaser.png" alt="Paper #05 Teaser">
-                        </a>
+                        <img src="/IROS2026_Accepted_Papers_and_Teasers/05_Robust_Local_Collision_Avoidance_SVFI/05_Robust_Local_Collision_Avoidance_SVFI__teaser.png" alt="Paper #05 Teaser Figure" onclick="openLightbox(this)" title="Click to enlarge image">
                     </div>
                 </div>
 
@@ -271,9 +310,7 @@
                         <a href="/IROS2026_Accepted_Papers_and_Teasers/06_Contact_Modes_Are_Strata/06_Contact_Modes_Are_Strata__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
                     </div>
                     <div class="paper-teaser">
-                        <a href="/IROS2026_Accepted_Papers_and_Teasers/06_Contact_Modes_Are_Strata/06_Contact_Modes_Are_Strata__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
-                            <img src="/IROS2026_Accepted_Papers_and_Teasers/06_Contact_Modes_Are_Strata/06_Contact_Modes_Are_Strata__teaser.png" alt="Paper #06 Teaser">
-                        </a>
+                        <img src="/IROS2026_Accepted_Papers_and_Teasers/06_Contact_Modes_Are_Strata/06_Contact_Modes_Are_Strata__teaser.png" alt="Paper #06 Teaser Figure" onclick="openLightbox(this)" title="Click to enlarge image">
                     </div>
                 </div>
 
@@ -286,9 +323,7 @@
                         <a href="/IROS2026_Accepted_Papers_and_Teasers/07_AdaDexGrasp/07_AdaDexGrasp__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
                     </div>
                     <div class="paper-teaser">
-                        <a href="/IROS2026_Accepted_Papers_and_Teasers/07_AdaDexGrasp/07_AdaDexGrasp__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
-                            <img src="/IROS2026_Accepted_Papers_and_Teasers/07_AdaDexGrasp/07_AdaDexGrasp__teaser.png" alt="Paper #07 Teaser">
-                        </a>
+                        <img src="/IROS2026_Accepted_Papers_and_Teasers/07_AdaDexGrasp/07_AdaDexGrasp__teaser.png" alt="Paper #07 Teaser Figure" onclick="openLightbox(this)" title="Click to enlarge image">
                     </div>
                 </div>
 
@@ -301,9 +336,7 @@
                         <a href="/IROS2026_Accepted_Papers_and_Teasers/08_Beyond_Fingertips/08_Beyond_Fingertips__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
                     </div>
                     <div class="paper-teaser">
-                        <a href="/IROS2026_Accepted_Papers_and_Teasers/08_Beyond_Fingertips/08_Beyond_Fingertips__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
-                            <img src="/IROS2026_Accepted_Papers_and_Teasers/08_Beyond_Fingertips/08_Beyond_Fingertips__teaser.png" alt="Paper #08 Teaser">
-                        </a>
+                        <img src="/IROS2026_Accepted_Papers_and_Teasers/08_Beyond_Fingertips/08_Beyond_Fingertips__teaser.png" alt="Paper #08 Teaser Figure" onclick="openLightbox(this)" title="Click to enlarge image">
                     </div>
                 </div>
 
@@ -316,9 +349,7 @@
                         <a href="/IROS2026_Accepted_Papers_and_Teasers/09_Rotation-Aware_Point-Cloud_Embeddings/09_Rotation-Aware_Point-Cloud_Embeddings__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
                     </div>
                     <div class="paper-teaser">
-                        <a href="/IROS2026_Accepted_Papers_and_Teasers/09_Rotation-Aware_Point-Cloud_Embeddings/09_Rotation-Aware_Point-Cloud_Embeddings__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
-                            <img src="/IROS2026_Accepted_Papers_and_Teasers/09_Rotation-Aware_Point-Cloud_Embeddings/09_Rotation-Aware_Point-Cloud_Embeddings__teaser.png" alt="Paper #09 Teaser">
-                        </a>
+                        <img src="/IROS2026_Accepted_Papers_and_Teasers/09_Rotation-Aware_Point-Cloud_Embeddings/09_Rotation-Aware_Point-Cloud_Embeddings__teaser.png" alt="Paper #09 Teaser Figure" onclick="openLightbox(this)" title="Click to enlarge image">
                     </div>
                 </div>
 
@@ -331,9 +362,7 @@
                         <a href="/IROS2026_Accepted_Papers_and_Teasers/10_Reduction_Tracking_Control_Weak_Symmetry/10_Reduction_Tracking_Control_Weak_Symmetry__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
                     </div>
                     <div class="paper-teaser">
-                        <a href="/IROS2026_Accepted_Papers_and_Teasers/10_Reduction_Tracking_Control_Weak_Symmetry/10_Reduction_Tracking_Control_Weak_Symmetry__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
-                            <img src="/IROS2026_Accepted_Papers_and_Teasers/10_Reduction_Tracking_Control_Weak_Symmetry/10_Reduction_Tracking_Control_Weak_Symmetry__teaser.png" alt="Paper #10 Teaser">
-                        </a>
+                        <img src="/IROS2026_Accepted_Papers_and_Teasers/10_Reduction_Tracking_Control_Weak_Symmetry/10_Reduction_Tracking_Control_Weak_Symmetry__teaser.png" alt="Paper #10 Teaser Figure" onclick="openLightbox(this)" title="Click to enlarge image">
                     </div>
                 </div>
 
@@ -346,9 +375,7 @@
                         <a href="/IROS2026_Accepted_Papers_and_Teasers/11_Learning_Deformable_Cable_Geometry/11_Learning_Deformable_Cable_Geometry__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
                     </div>
                     <div class="paper-teaser">
-                        <a href="/IROS2026_Accepted_Papers_and_Teasers/11_Learning_Deformable_Cable_Geometry/11_Learning_Deformable_Cable_Geometry__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
-                            <img src="/IROS2026_Accepted_Papers_and_Teasers/11_Learning_Deformable_Cable_Geometry/11_Learning_Deformable_Cable_Geometry__teaser.png" alt="Paper #11 Teaser">
-                        </a>
+                        <img src="/IROS2026_Accepted_Papers_and_Teasers/11_Learning_Deformable_Cable_Geometry/11_Learning_Deformable_Cable_Geometry__teaser.png" alt="Paper #11 Teaser Figure" onclick="openLightbox(this)" title="Click to enlarge image">
                     </div>
                 </div>
 
@@ -361,9 +388,7 @@
                         <a href="/IROS2026_Accepted_Papers_and_Teasers/12_Calibrating_Motion_Uncertainty_Contact-Stratified/12_Calibrating_Motion_Uncertainty_Contact-Stratified__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
                     </div>
                     <div class="paper-teaser">
-                        <a href="/IROS2026_Accepted_Papers_and_Teasers/12_Calibrating_Motion_Uncertainty_Contact-Stratified/12_Calibrating_Motion_Uncertainty_Contact-Stratified__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
-                            <img src="/IROS2026_Accepted_Papers_and_Teasers/12_Calibrating_Motion_Uncertainty_Contact-Stratified/12_Calibrating_Motion_Uncertainty_Contact-Stratified__teaser.png" alt="Paper #12 Teaser">
-                        </a>
+                        <img src="/IROS2026_Accepted_Papers_and_Teasers/12_Calibrating_Motion_Uncertainty_Contact-Stratified/12_Calibrating_Motion_Uncertainty_Contact-Stratified__teaser.png" alt="Paper #12 Teaser Figure" onclick="openLightbox(this)" title="Click to enlarge image">
                     </div>
                 </div>
 
@@ -376,9 +401,7 @@
                         <a href="/IROS2026_Accepted_Papers_and_Teasers/13_Riemannian_Splat_Regression/13_Riemannian_Splat_Regression__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
                     </div>
                     <div class="paper-teaser">
-                        <a href="/IROS2026_Accepted_Papers_and_Teasers/13_Riemannian_Splat_Regression/13_Riemannian_Splat_Regression__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
-                            <img src="/IROS2026_Accepted_Papers_and_Teasers/13_Riemannian_Splat_Regression/13_Riemannian_Splat_Regression__teaser.png" alt="Paper #13 Teaser">
-                        </a>
+                        <img src="/IROS2026_Accepted_Papers_and_Teasers/13_Riemannian_Splat_Regression/13_Riemannian_Splat_Regression__teaser.png" alt="Paper #13 Teaser Figure" onclick="openLightbox(this)" title="Click to enlarge image">
                     </div>
                 </div>
 
@@ -391,9 +414,7 @@
                         <a href="/IROS2026_Accepted_Papers_and_Teasers/14_Phase-Varying_Neural_Potential_Functions/14_Phase-Varying_Neural_Potential_Functions__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
                     </div>
                     <div class="paper-teaser">
-                        <a href="/IROS2026_Accepted_Papers_and_Teasers/14_Phase-Varying_Neural_Potential_Functions/14_Phase-Varying_Neural_Potential_Functions__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
-                            <img src="/IROS2026_Accepted_Papers_and_Teasers/14_Phase-Varying_Neural_Potential_Functions/14_Phase-Varying_Neural_Potential_Functions__teaser.png" alt="Paper #14 Teaser">
-                        </a>
+                        <img src="/IROS2026_Accepted_Papers_and_Teasers/14_Phase-Varying_Neural_Potential_Functions/14_Phase-Varying_Neural_Potential_Functions__teaser.png" alt="Paper #14 Teaser Figure" onclick="openLightbox(this)" title="Click to enlarge image">
                     </div>
                 </div>
 
@@ -406,9 +427,7 @@
                         <a href="/IROS2026_Accepted_Papers_and_Teasers/15_Compositional_Scene-Motion_Learning/15_Compositional_Scene-Motion_Learning__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
                     </div>
                     <div class="paper-teaser">
-                        <a href="/IROS2026_Accepted_Papers_and_Teasers/15_Compositional_Scene-Motion_Learning/15_Compositional_Scene-Motion_Learning__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
-                            <img src="/IROS2026_Accepted_Papers_and_Teasers/15_Compositional_Scene-Motion_Learning/15_Compositional_Scene-Motion_Learning__teaser.png" alt="Paper #15 Teaser">
-                        </a>
+                        <img src="/IROS2026_Accepted_Papers_and_Teasers/15_Compositional_Scene-Motion_Learning/15_Compositional_Scene-Motion_Learning__teaser.png" alt="Paper #15 Teaser Figure" onclick="openLightbox(this)" title="Click to enlarge image">
                     </div>
                 </div>
 
@@ -421,9 +440,7 @@
                         <a href="/IROS2026_Accepted_Papers_and_Teasers/16_Equivariance_Begins_at_the_Source/16_Equivariance_Begins_at_the_Source__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
                     </div>
                     <div class="paper-teaser">
-                        <a href="/IROS2026_Accepted_Papers_and_Teasers/16_Equivariance_Begins_at_the_Source/16_Equivariance_Begins_at_the_Source__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
-                            <img src="/IROS2026_Accepted_Papers_and_Teasers/16_Equivariance_Begins_at_the_Source/16_Equivariance_Begins_at_the_Source__teaser.png" alt="Paper #16 Teaser">
-                        </a>
+                        <img src="/IROS2026_Accepted_Papers_and_Teasers/16_Equivariance_Begins_at_the_Source/16_Equivariance_Begins_at_the_Source__teaser.png" alt="Paper #16 Teaser Figure" onclick="openLightbox(this)" title="Click to enlarge image">
                     </div>
                 </div>
 
@@ -436,9 +453,7 @@
                         <a href="/IROS2026_Accepted_Papers_and_Teasers/17_Shades_of_Success/17_Shades_of_Success__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
                     </div>
                     <div class="paper-teaser">
-                        <a href="/IROS2026_Accepted_Papers_and_Teasers/17_Shades_of_Success/17_Shades_of_Success__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
-                            <img src="/IROS2026_Accepted_Papers_and_Teasers/17_Shades_of_Success/17_Shades_of_Success__teaser.png" alt="Paper #17 Teaser">
-                        </a>
+                        <img src="/IROS2026_Accepted_Papers_and_Teasers/17_Shades_of_Success/17_Shades_of_Success__teaser.png" alt="Paper #17 Teaser Figure" onclick="openLightbox(this)" title="Click to enlarge image">
                     </div>
                 </div>
 
@@ -451,9 +466,7 @@
                         <a href="/IROS2026_Accepted_Papers_and_Teasers/18_Robust_In-Hand_Manipulation_Priors/18_Robust_In-Hand_Manipulation_Priors__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
                     </div>
                     <div class="paper-teaser">
-                        <a href="/IROS2026_Accepted_Papers_and_Teasers/18_Robust_In-Hand_Manipulation_Priors/18_Robust_In-Hand_Manipulation_Priors__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
-                            <img src="/IROS2026_Accepted_Papers_and_Teasers/18_Robust_In-Hand_Manipulation_Priors/18_Robust_In-Hand_Manipulation_Priors__teaser.png" alt="Paper #18 Teaser">
-                        </a>
+                        <img src="/IROS2026_Accepted_Papers_and_Teasers/18_Robust_In-Hand_Manipulation_Priors/18_Robust_In-Hand_Manipulation_Priors__teaser.png" alt="Paper #18 Teaser Figure" onclick="openLightbox(this)" title="Click to enlarge image">
                     </div>
                 </div>
 
@@ -466,9 +479,7 @@
                         <a href="/IROS2026_Accepted_Papers_and_Teasers/19_From_Swept_Contact_to_Pose/19_From_Swept_Contact_to_Pose__camera-ready.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">Download Paper (PDF)</a>
                     </div>
                     <div class="paper-teaser">
-                        <a href="/IROS2026_Accepted_Papers_and_Teasers/19_From_Swept_Contact_to_Pose/19_From_Swept_Contact_to_Pose__camera-ready.pdf" target="_blank" rel="noopener noreferrer">
-                            <img src="/IROS2026_Accepted_Papers_and_Teasers/19_From_Swept_Contact_to_Pose/19_From_Swept_Contact_to_Pose__teaser.jpg" alt="Paper #19 Teaser">
-                        </a>
+                        <img src="/IROS2026_Accepted_Papers_and_Teasers/19_From_Swept_Contact_to_Pose/19_From_Swept_Contact_to_Pose__teaser.jpg" alt="Paper #19 Teaser Figure" onclick="openLightbox(this)" title="Click to enlarge image">
                     </div>
                 </div>
 
@@ -494,6 +505,35 @@
 
         </div>
     </div>
+
+    <!-- Lightbox Modal for Enlarged Figures -->
+    <div id="imageModal" class="lightbox-modal" onclick="closeLightbox(event)">
+        <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
+        <img class="lightbox-modal-content" id="imgModalTarget" alt="Enlarged Teaser Figure">
+    </div>
+
+    <script>
+        function openLightbox(imgElement) {
+            var modal = document.getElementById("imageModal");
+            var modalImg = document.getElementById("imgModalTarget");
+            modal.style.display = "flex";
+            modal.style.alignItems = "center";
+            modal.style.justifyContent = "center";
+            modalImg.src = imgElement.src;
+        }
+
+        function closeLightbox(event) {
+            if (event.target.id === "imageModal" || event.target.className === "lightbox-close") {
+                document.getElementById("imageModal").style.display = "none";
+            }
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") {
+                document.getElementById("imageModal").style.display = "none";
+            }
+        });
+    </script>
 
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
